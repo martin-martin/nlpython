@@ -28,10 +28,3 @@ Var = 1  # this throws no error - why not? why not use it?
 
 # use input() to ask for user input - - assign it to a variable
 
-
-
-# ------------------------------------------
-
-# LINK: how to use markdown
-# https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-# more resources: https://gist.github.com/JosefJezek/5917040
