@@ -2,6 +2,8 @@
 
 _or: CCC - Casey's Course Curriculum_
 
+>Scraping is the library card of the 21st century (Casey King)
+
 ---
 
 1. Objectives
@@ -46,6 +48,7 @@ fluency in getting, cleaning, analyzing and presenting data
 
 * topic model over the past years of the Yale president's speeches (did he become more strict or remain warm and fuzzy? 🐇)
 * test a hypothesis on student satisfaction - do they find challenging courses more satisfying? aggregate all student reviews and assess correlation between how easy is the course perceived and student satisfaction
+* better understand the crypto-forensics project
 * ... and way more :) ...
 
 # Support types
