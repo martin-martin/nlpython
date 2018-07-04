@@ -110,7 +110,7 @@ ______________________  /_____ personalized pointers
 
 # Cost
 
-Bill hourly at $35/hr as a mentor/tutor situation. If we follow the estimated
+Billed hourly at $35/hr for mentor/tutor services. If we follow the estimated
 time projection mentioned above, this amounts to $4725 for the 9 week option.
 My time will be clearly tracked, and payments can happen on a bi-weekly basis.
 Like this we can adjust as needed moving forward (e.g. if we see that more or less support time is needed).
