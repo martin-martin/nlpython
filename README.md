@@ -1,6 +1,6 @@
 # Natural Language Processing with Python
 
-_A marketplace for code reviews and exercises._
+_A humanistic consortium for code review and exercises._
 
 In order to **practice using GitHub**, as well as because it is a very useful tool for **collaboratively working on code**,
 we'll be using GitHub for submitting exercises and doing code reviews.
