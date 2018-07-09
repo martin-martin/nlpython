@@ -1,0 +1,68 @@
+Time flies like an arrow; fruit flies like a banana
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+A Brazilian tribesman holding a bow and arrow
+An archer about to launch an arrow
+A small fly with red eyes on the skin of a banana
+A fruit fly on a banana peel
+"Time flies like an arrow; fruit flies like a banana" is a humorous saying that is used in linguistics as an example of a garden path sentence or syntactic ambiguity, and in word play as an example of punning, double entendre, and antanaclasis.
+
+Contents
+1   Analysis of the basic ambiguities
+2   History
+2.1 Other attributions
+3   Use in linguistics
+4   See also
+5   References
+Analysis of the basic ambiguities
+"Time flies like an arrow" is an English phrase often used to illustrate syntactic ambiguity.[1] In this connection the sentence is often seen as part of the elaboration: "Time flies like an arrow; fruit flies like a banana".
+
+Modern English speakers unambiguously understand the sentence to mean "As a generalisation, time passes in the same way that an arrow generally flies (i.e. quickly)" (as in the common metaphor time goes by quickly). However, the matter is more difficult in the formal interpretation of natural language; formally the sentence is logically ambiguous and alternatively could be interpreted as meaning, for example:[2]
+
+(as an imperative) Measure the speed of flies like you would measure that of an arrow—i.e. (You should) time flies as you would time an arrow.
+(imperative) Measure the speed of flies in the way an arrow would—i.e. (You should) time flies in the same manner that an arrow would time them.
+(imperative) Measure the speed of flies with qualities resembling those of arrows—i.e. (You should) time those flies that are like an arrow.
+(declarative) Time moves in a way an arrow would.
+(declarative, i.e. neutrally stating a proposition) Certain flying insects, called "time flies", enjoy an arrow.
+In addition, the sentence contains semantic ambiguity. For instance, the noun phrase "Time flies" could refer to all time flies or particular time flies, and "an arrow" to all arrows, a particular arrow, or different arrows for different flies; compare "Fruit flies like a banana", "Fruit flies ate a banana", "Fruit flies live on a banana". Likewise, the noun "Time" could refer to the magazine.
+
+History
+The expression is based on the proverb: "Time flies", a translation of the Latin Tempus fugit, where "fly" is to be taken in the sense of flee.
+
+An early example of a pun with the expression "Time flies" may be found in a 1930 issue of Boys' Life:
+
+Flies Around
+Scoutmaster: Time flies.
+Smart Tenderfoot: You can't. They go too fast.[3][4]
+Anthony Oettinger gives "fruit flies like bananas" as contrasted with "time flies like an arrow" as an example of the difficulty of handling ambiguous syntactic structures as early as 1963,[5] although his formal publications with Susumu Kuno do not use that example.[6] This is quoted by later authors.[7]
+
+A fuller exposition with the banana example appeared in a 1966 article by Oettinger in Scientific American.[8]
+
+This article prompted the following response in a letter:[9]
+
+Time Flies Like an Arrow
+An Ode to Oettinger
+Now, thin fruit flies like thunderstorms,
+And thin farm boys like farm girls narrow;
+And tax firm men like fat tax forms –
+But time flies like an arrow.
+When tax forms tax all firm men's souls,
+While farm girls slim their boyfriends' flanks;
+That's when the murd'rous thunder rolls –
+And thins the fruit flies ranks.
+Like tossed bananas in the skies,
+The thin fruit flies like common yarrow;
+Then's the time to time the time flies –
+Like the time flies like an arrow.
+Edison B. Schroeder 1966
+The verse is popular as a specimen of didactic humor trading on syntactic ambiguity. Like the poem The Chaos, by Gerard Nolst Trenité,[10] its themes are popular among practitioners and students in fields such as natural language processing and linguistics.[11]
+
+Other attributions
+The saying is sometimes attributed to Groucho Marx, but the earliest attribution to him dates only to 1982,[12] and there is no reason to believe he actually said it.[13]
+
+Use in linguistics
+The saying is used as a linguistic example of antanaclasis, the stylistic trope of repeating a single word, but with a different meaning each time.[citation needed]
+
+It is also used as an example of punning.[citation needed] The wordplay is based on the distinct meanings of the two occurrences of the word flies (the verb "travel through the air" and the noun for certain insects), and of the word like (the preposition "similarly to" and the verb "enjoy"). For example, the second clause can be read as "fruit travels through the air similar to a banana" or as "certain insects enjoy a banana".
+
+This is an example of a garden-path sentence, a phrase that the reader or listener normally begins to parse according to one grammatical structure, and is then forced to back up and reparse when the sentence ends in an unexpected way.[citation needed]
