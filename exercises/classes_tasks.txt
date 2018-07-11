@@ -1,0 +1,18 @@
+- __repr__() method and __str__() method instead of print() calls
+
+- add two planets:
+     * Earth
+     * Another Earth
+     (ps.: what are two different ways of doing this, considering their nature?)
+
+
+- do the 'another earth' example with classes using Inheritance
+
+def MirrorPlanet(Planet):
+
+    def __init__(*args)
+        super().__init__(*args)
+
+
+- include the format_name() function as a method in the composer class
+- alternatively: import it as a module
