@@ -48,8 +48,6 @@ def play_game(word):
             break
 
         guess = input("Guess a letter: ")
-        # guess = "s"
-        tries -= 1
 
         if guess in word:
             for i, c in enumerate(word):
@@ -60,6 +58,8 @@ def play_game(word):
 
         else:
             print("Nope. Sorry, try again.")
+            tries -= 1
+
         print(f"{tries} tries left...")
 
     if '_' not in blank:
