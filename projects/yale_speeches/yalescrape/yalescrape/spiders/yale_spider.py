@@ -1,38 +1,47 @@
 import scrapy
+from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import Rule, CrawlSpider
+from yalescrape.items import YalescrapeItem
 
 
-class YaleSpider(scrapy.Spider):
+class YaleSpider(CrawlSpider):
     name = "yale"
 
-    def start_requests(self):
-        urls = [
-            'https://president.yale.edu/speeches-writings/statements',
-            'https://president.yale.edu/speeches-writings/notes-woodbridge-hall',
-            'https://president.yale.edu/speeches-writings/speeches',
-        ]
-        for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+    # since all writings are descendants of this URL, and the spider
+    # crawls recursively, we can start off only with this one URL
+    start_url = "https://president.yale.edu/speeches-writings/"
 
-    def parse(self, response):
-        page = response.url.split("/")[-1]
-        filename = f'{page}.html'
-        base_url = 'https://president.yale.edu'
-        link_urls = response.css('td.views-field-title a::attr(href)').extract()
-        link_titles = response.css('td.views-field-title a::text').extract()
-        # notes-woodbridge-hall has a different document structure
-        # that will need to be addressed differently
-        # print(link_urls[0])
-        # print(link_titles[0])
-        with open(filename, 'wb') as f:
-            f.write(response.body)
-        with open(f'{page}-links.md', 'wb') as f:
-            f.write(b"# %b\n" % (page.encode('utf-8')))
-            for link in zip(link_titles, link_urls):
-                # this one was tricky. f.write() only accepts
-                # a bytes-like object, and f-strings don't support that
-                # so I had to employ an older string formatting method
-                # as well as explicit byte-encoding
-                f.write(b"- [%b](%b%b)\n" % (link[0].encode('utf-8'),
-                                        base_url.encode('utf-8'),
-                                        link[1].encode('utf-8')))
-        self.log(f'Saved file {filename}')
+    # defining to omit links that are not interesting for this data
+    # collection. we want only speeches and writings
+    allowed_domain = "https://president.yale.edu/speeches-writings/"
+
+
+    def start_requests(self):
+        yield scrapy.Request(url=self.start_url, callback=self.parse_items)
+
+    def parse_items(self, response):
+        # box for items
+        items = []
+        # fetching all the links recursively
+        link_extractor = LinkExtractor(
+            allow=[self.start_url],
+            deny=[],
+            tags='a',
+            attrs='href',
+            canonicalize=True
+        )
+        links = link_extractor.extract_links(response)
+        # then go through them to further process
+        for link in links:
+            # check whether it's a link leading to some writing
+            if self.allowed_domain in link.url:
+                # we create an Item object and assign it the instance
+                # variables we defined in the 'schema' over in items.py
+                item = YalescrapeItem()
+                item['url_from'] = response.url
+                item['url_to'] = link.url
+                items.append(item)
+        return items
+
+# helpful tutorial:
+# https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/

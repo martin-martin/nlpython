@@ -11,4 +11,6 @@ import scrapy
 class YalescrapeItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    url_from = scrapy.Field()
+    url_to = scrapy.Field()
+    text = scrapy.Field()
