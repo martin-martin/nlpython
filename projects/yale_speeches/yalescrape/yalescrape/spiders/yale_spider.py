@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import Rule, CrawlSpider
+from scrapy.selector import Selector
 from yalescrape.items import YalescrapeItem
 
 
@@ -9,39 +10,39 @@ class YaleSpider(CrawlSpider):
 
     # since all writings are descendants of this URL, and the spider
     # crawls recursively, we can start off only with this one URL
-    start_url = "https://president.yale.edu/speeches-writings/"
+    start_urls = ["https://president.yale.edu/speeches-writings"]
 
     # defining to omit links that are not interesting for this data
     # collection. we want only speeches and writings
-    allowed_domain = "https://president.yale.edu/speeches-writings/"
+    # NOTE: adding the final "/" will only take subpages of that domain
+    allowed_domains = ["president.yale.edu/speeches-writings/"]
 
 
     def start_requests(self):
-        yield scrapy.Request(url=self.start_url, callback=self.parse_items)
+        for url in self.start_urls:
+            yield scrapy.Request(url=url, callback=self.parse_items)
 
     def parse_items(self, response):
-        # box for items
+        # a box for our items
         items = []
-        # fetching all the links recursively
-        link_extractor = LinkExtractor(
-            allow=[self.start_url],
-            deny=[],
-            tags='a',
-            attrs='href',
-            canonicalize=True
-        )
+        link_extractor = LinkExtractor(canonicalize=True, unique=True)
         links = link_extractor.extract_links(response)
         # then go through them to further process
         for link in links:
             # check whether it's a link leading to some writing
-            if self.allowed_domain in link.url:
-                # we create an Item object and assign it the instance
-                # variables we defined in the 'schema' over in items.py
-                item = YalescrapeItem()
-                item['url_from'] = response.url
-                item['url_to'] = link.url
-                items.append(item)
+            for ok_domain in self.allowed_domains:
+                if ok_domain in link.url:
+                    # we create an Item object and assign it the instance
+                    # variables we defined in the 'schema' over in items.py
+                    item = YalescrapeItem()
+                    item['url_from'] = response.url
+                    item['url_to'] = link.url
+                    items.append(item)
         return items
 
-# helpful tutorial:
+# helpful tutorials:
 # https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/
+# https://www.youtube.com/watch?v=P-_TpZ54Vcw
+
+# to write output to file, call the spider using:
+# scrapy crawl yale -o links.csv -t csv
