@@ -17,15 +17,24 @@ class YaleSpider(CrawlSpider):
     # NOTE: adding the final "/" will only take subpages of that domain
     allowed_domains = ["president.yale.edu/speeches-writings/"]
 
+    rules = [
+        Rule(
+            LinkExtractor(canonicalize=True, unique=True),
+            callback='parse_items',
+            follow=True,
+        )
+    ]
 
-    def start_requests(self):
-        for url in self.start_urls:
-            yield scrapy.Request(url=url, callback=self.parse_items)
+    # def start_requests(self):
+    #     for url in self.start_urls:
+    #         yield scrapy.Request(url=url, callback=self.parse_items)
 
     def parse_items(self, response):
+        link = response.xpath("//a").extract()
+        print(link)
         # a box for our items
         items = []
-        link_extractor = LinkExtractor(canonicalize=True, unique=True)
+        # link_extractor = LinkExtractor(canonicalize=True, unique=True)
         links = link_extractor.extract_links(response)
         # then go through them to further process
         for link in links:
