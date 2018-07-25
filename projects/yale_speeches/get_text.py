@@ -18,7 +18,7 @@ for f in files:
     # this gives two items - one containing the date, and one the text
     div_list = soup.find_all('div', {'class': ['list-item', 'even']})
     # getting the date as a string
-    time = div_list[0].text
+    date = div_list[0].text
     # getting the text as a list of p elements
     text_list = div_list[1].find_all('p')
     # fetching only the text from those p elements
@@ -29,5 +29,5 @@ for f in files:
 
     # and then, writing it all to a new txt file
     with open(f'texts/{f[:-4]}.txt', 'w') as fout:
-        fout.write(f'{time}\n\n')
+        fout.write(f'{date}\n\n')
         fout.write(text)
