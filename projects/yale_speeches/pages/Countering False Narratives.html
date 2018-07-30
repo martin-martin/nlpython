@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="en" dir="ltr" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+
+  GGGGGGGGGGGG      GGGGGGGGGGG               fGGGGGG
+    ;GGGGG.             GGGi                     GGGG
+      CGGGG:           GGG                       GGGG
+       lGGGGt         GGL                        GGGG
+        .GGGGC       GG:                         GGGG
+          GGGGG    .GG.        ;CGGGGGGL         GGGG          .LGGGGGGGL
+           GGGGG  iGG        GGG:   ,GGGG        GGGG        tGGf     ;GGGC
+            LGGGGfGG        GGGG     CGGG;       GGGG       GGGL       GGGGt
+             lGGGGL                  CGGG;       GGGG      CGGGCCCCCCCCCCCCC
+              GGGG                   GGGG,       GGGG      GGGG
+              GGGG             tCGG; CGGG,       GGGG      GGGG
+              GGGG          GGGG     CGGG.       GGGG      GGGGL
+              GGGG         GGGGC     CGGG.       GGGG      :GGGGC          :
+             ,GGGGG.       GGGGG:  .LGGGGG,.tG   GGGG        GGGGGGt,..,fGC
+        ,GGGGGGGGGGGGGGf    iGGGGGG   CGGGGC  GGGGGGGGGG       LGGGGGGGC
+
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, minimum-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/speeches-writings/speeches/countering-false-narratives" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/3245" />
+  <title>Countering False Narratives
+ | Office of the President</title>
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+  <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+
+  <link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_LArH7Avt_jMWbKQlemaJinUm77NWHsvIR0KIq0fnWd4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_OeRMnEygp9KsxbWHSIhq3YfGrLGo9tVurh0rgb4IgSQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_cAhd4uy3Au41hEQEkVpwRFXE9gnieoBnnRomFcknFcU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_23.css?paqjc0" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_26.css?paqjc0" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_nBvgsRGFO8eRuGybs3zqi1R0F_76QazEf5KpSL9kQhA.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_059BxwQdO3W6gC_prw0ohrQj1fWv8MiFJkqt4YP0qJk.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://president.yale.edu/sites/all/libraries/respondjs/respond.min.js?paqjc0"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+Drupal.settings.ais = [{"name":"threshold-480","size":480},{"name":"threshold-768","size":768},{"name":"threshold-992","size":992},{"name":"threshold-1382","size":1382}];
+Drupal.settings.ais_method = "both-max";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_FCbVJy4R9U6dcYORv_5oUUdxqrzv2ypaZ3tWIRydWk4.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_JMLtTwkBrCpIk3h5ar8brb-5bR1lXKbrC7Jgd0kG0lw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-991898-16", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_CmJ8I_yZ56Qc__8wJuzi6qAv6LW5E8M68Xn7gIMcs0M.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"yalenew_standard","theme_token":"29gdV0mZcxq_w1OpnV5-Hicftj1gHOIxjzoRYpISJU8","js":{"sites\/all\/themes\/yalenew_base\/js\/jcaption.min.js":1,"sites\/all\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.js":1,"ais\/assets\/js\/ais.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.mousewheel.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/script.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/yalenew_base\/js\/modernizr.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/jquery.fitted.js":1,"sites\/all\/themes\/yalenew_base\/js\/fastclick.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/appendAround.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ais\/assets\/css\/ais.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/jscrollpane\/css\/jquery.jscrollpane.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/typogrify\/typogrify.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/yalenew_base\/css\/globalnew.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"ie::wide::sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/fluid\/yalenew-default-fluid-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/narrow\/yalenew-default-narrow-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1}},"collapsiblock":{"blocks":{"block-block-21":"3","block-block-22":"3","block-block-23":"3","block-views-lorimer-awardees-list-block-1":"1","block-block-24":"1","block-menu-block-1":"1","block-block-18":"1","block-block-15":"1","block-block-17":"1","block-menu-menu-banner-menu":"1","block-views-galleries-block-3":"1","block-menu-block-3":"1","block-block-25":"1","block-block-9":"1","block-views-rotating-header-image-block":"1","block-block-26":"1","block-block-16":"1","block-block-27":"1","block-block-28":"1","block-block-29":"1","block-block-30":"1","block-system-main-menu":"1","block-block-31":"1","block-block-32":"1","block-block-33":"1","block-block-34":"1","block-search-form":"1","block-block-35":"1","block-views-campus-messages-block-1":"1","block-views-06dc87f73e52cf986411e7afdc23757b":"1","block-block-36":"1","block-views-campus-messages-block-3":"1","block-views-rotating-feature-block":"1","block-views-feature-carousel-block-3":"1","block-block-37":"1","block-block-39":"1","block-block-38":"1","block-menu-block-4":"1","block-menu-block-5":"1","block-block-41":"1","block-block-46":"1","block-block-51":"1","block-block-66":"1","block-block-71":"1","block-block-76":"1","block-block-81":"1","block-block-86":"1"},"default_state":"1","slide_type":"1","slide_speed":"200","block_title":":header:first","block":"article.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":null},"jScrollPane":{"class":".scroll-pane"},"custom_search":{"form_target":"_self","solr":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/speeches-writings\/speeches\/countering-false-narratives":true},"omega":{"layouts":{"primary":"wide","order":["fluid","narrow","wide"],"queries":{"fluid":"all and (max-width: 739px)","narrow":"all and (min-width: 740px) and (max-width: 1024px)","wide":"all and (min-width: 1025px)"}}}});
+//--><!]]>
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-3245 node-type-president-speeches yalenew-standard context-speeches-writings one-sidebar sidebar-first nav-blue-med block-carbon nav-serif block-font-sans block-outline">
+  <aside role='complementary' id="skip-link" aria-label="Skip to main content">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </aside>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header" role="banner">
+  <div id="zone-topper-wrapper" class="zone-wrapper zone-topper-wrapper clearfix yalenew-standard-topper">  <div id="zone-topper" class="zone zone-topper clearfix container-12">
+    <div  class="grid-3 region region-topper-first" id="region-topper-first">
+  <div class="region-inner region-topper-first-inner">
+      <div class="topper-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-univ"><span class="element-invisible">Yale University</span></a>
+      </div>
+
+	 <div id="moved-main-nav-wrapper">
+                <button aria-expanded="false" id="nav-ready" class="nav-ready"><span class="element-invisible">Open Main Navigation</span></button>
+                <div id="moved-main-nav" class="moved-main-nav" data-set="append-main-nav"></div>
+                <button aria-expanded="true" id="nav-close" class="nav-close nav-hidden"><span class="element-invisible">Close Main Navigation</span></button>
+        </div>
+
+  </div>
+</div>
+<div class="grid-9 region region-topper-second" id="region-topper-second">
+  <div class="region-inner region-topper-second-inner">
+    <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <form class="search-form" role="search" aria-label="Site Search" action="/speeches-writings/speeches/countering-false-narratives" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2"><i class="fa fa-search"></i> </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search this site" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input style="display:none;" type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-idsmdBbViD4VrNF9tcGLZ8fOkFd7XZqcoO4W7Ub0X3M" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-10 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+                                                  <h2 class="site-name"><a href="/" title="Home">Office of the President
+</a></h2>
+                                  </div>
+          </div>
+</div>
+  </div>
+</div></header>
+  
+      <main  id="section-content" class="section section-content" role="main">
+  <div id="section-content-inner">
+    
+
+<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  <div id="zone-menu" class="zone zone-menu clearfix yale-standard-menu container-12">
+
+<div id="original-main-nav-wrapper">
+  <div id="original-main-nav" data-set="append-main-nav">
+    <div id="main-nav">
+
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav id="main-menu-navigation" role="navigation" aria-label="Main Menu" class="navigation">
+                  <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first collapsed menu-about"><a href="/office-president">About</a></li>
+<li class="collapsed menu-programs-&amp;-outreach"><a href="/programs-outreach">Programs &amp; Outreach</a></li>
+<li class="collapsed menu-advisory-groups"><a href="/advisory-groups">Advisory Groups</a></li>
+<li class="expanded active-trail menu-speeches-&amp;-writings"><a href="/speeches-writings" class="active-trail">Speeches &amp; Writings</a></li>
+<li class="leaf menu-goals-for-yale"><a href="/goals">Goals for Yale</a></li>
+<li class="last leaf menu-news"><a href="/in-the-news">News</a></li>
+</ul>    </div>
+  </div>
+</div>
+    </nav>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  <div id="zone-content" class="zone zone-content clearfix container-12">
+          <div id="breadcrumb" class="grid-12"><nav class="breadcrumb" role="navigation" aria-label="You are here"><a href="/">Home</a><span class="tic"> > </span><a href="/speeches-writings">Speeches & Writings</a><span class="tic"> > </span><a href="/speeches-writings/speeches" title="">Speeches</a><span class="tic"> > </span>Countering False Narratives</nav></div>
+    
+    <div id="moved-sidenav-wrapper" class="moved-sidenav-wrapper grid-12">
+       <div id="moved-sidenav" class="moved-sidenav" data-set="append-sidenav"></div>
+    </div>
+
+        <div class="grid-9 push-3 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content" tabindex="-1"></a>
+                <h1 class="title" id="page-title">Countering False Narratives
+</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <article about="/speeches-writings/speeches/countering-false-narratives" typeof="sioc:Item foaf:Document" class="node node-president-speeches node-promoted node-published node-not-sticky author-6 odd clearfix" id="node-president-speeches-3245">
+  <!--    -->
+    <span property="dc:title" content="Countering False Narratives" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  <div class="content clearfix">
+    <div class="field field-name-field-speaker field-type-text field-label-inline clearfix"><div class="field-label">Speaker:&nbsp;</div><div class="field-items"><div class="field-item even">Peter Salovey, President of Yale University</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-08-27T00:00:00-04:00">Saturday, August 27, 2016</span></div></div></div><div class="field field-name-field-speech-location field-type-text field-label-inline clearfix"><div class="field-label">Event:&nbsp;</div><div class="field-items"><div class="field-item even">Freshman Address, Yale College Class of 2020</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Good morning and welcome: to my colleagues here on stage, to the family members who have joined us today, and—especially—to the Yale College Class of 2020.</p>
+<p><em>Twenty-twenty</em>—a term that inevitably brings to mind perfect eyesight. And now that all of you are wearing 2020 as your class label in Yale College, I am confident your intuition and your mental acuity will develop here to an equivalent level of strength. The admissions office assures me that everything possible has been done to guarantee this outcome.</p>
+<p>Nonetheless, I’d like to reflect—on your “first day of school”—about what might impede your insight and what might advance it in the course of your education here.</p>
+<p>For many years, I taught introductory psychology to large numbers of freshmen. In the part of the course devoted to social psychology, I would ask my students to consider what we know about helping others in various kinds of social situations. Specifically, why is it that we offer assistance, or fail to offer assistance, in emergencies?</p>
+<p>I would begin with the tragic and well known case of Kitty Genovese, a twenty-nine-year-old woman who lived in Kew Gardens, Queens, and was murdered there in 1964. Her case received enormous attention and commentary, and you have probably heard some version of her story. As reported in the <em>New York Times</em>, thirty-eight individuals watched the murder from their apartment windows, but only one called the police, and by then it was too late.<sup><a href="#ftnt1">[1]</a></sup></p>
+<p>Over the years, I have described this shocking incident many times. So have other social psychologists teaching similar courses, and so did the social scientists who sought to explain how witnesses could exhibit such callous indifference to a horrific crime taking place before their eyes.</p>
+<p>Here’s the trouble: the standard account of the Kitty Genovese case is wrong in some of its crucial details.</p>
+<p>Kitty’s brother, Bill Genovese, produced a film last year called <em>The Witness</em>. In it, he documents that some bystanders were not indifferent: one witness shouted out the window at the attacker, another witness held Kitty in her arms as she died, and several called the police during the attack.</p>
+<p>So what does it mean that social scientists have been retelling an incorrect version of this story for over fifty years as a paradigmatic example of extreme bystander indifference? Well, among other things, it means that inadvertently we have been perpetuating what could rightly be called a <em>false narrative</em>—a version of events that, while partly true, had been shaped, in this case by a newspaper report, to elicit strong negative emotions like anger, fear, or disgust.</p>
+<p>As an investigator of human emotions, I know that even the most negative feelings can be important to our survival. Anger effectively signals that a goal is being blocked. Fear motivates caution and preparation. Disgust moves us away from things that can make us ill. However, sometimes our friends, family members, politicians, advertisers, pundits, and others look to manipulate our emotions for their own purposes. Anger, fear, and disgust can be highly effective ways to drive eyeballs to websites, consumers to products, or voters to the polls.</p>
+<p>My sense is that we are bombarded daily by false narratives of various kinds, and that they are doing a great deal of damage. In a national election season, you do not need to look very hard to find them.</p>
+<p>It is not my purpose today to mock the biggest “whoppers” or award “Pinocchios” for the biggest distortions. Rather, I am only hoping to persuade you that advocates on any side of a question can be tempted to exaggerate or distort or neglect crucial facts in ways that serve primarily to fuel your anger, fear, or disgust.</p>
+<p>If I am correct, then an important aspect of your education here will be learning how to recognize and address these kinds of accounts. In the course of that, you should pay especially close attention to the narratives that seem to align best with your own beliefs. To the extent you hold strong political or cultural or religious or economic beliefs, you will simply be like all the rest of us if you gravitate toward explanations that seem to provide confirmation for those beliefs or to demonize those who hold different ones. All of us are strongly predisposed to accept accounts that align with the opinions we already hold, and to ignore or dismiss those that do not. Social media, the blogosphere, and the political process are increasingly drenched with such narratives, inflaming our negative emotions and presenting real barriers to reasoned investigation, productive exchanges between differing views, and the search for common ground on the most challenging problems facing our global societies.  </p>
+<p>So, you are now embarking on an ambitious and hopeful effort to understand the world, your place in it, and what you can contribute to forward progress. How can you address the seductive power of false narratives, especially in a time when grave mistrust on many sides seems to be fueling ever more of them?</p>
+<p>It will not surprise you that I am highly aware of false narratives circulating about students like yourselves and higher education in general. I have a thick shelf of contemporary books assuring me that students at elite universities are merely excellent sheep, that a liberal arts degree is a ticket to unemployment, that truly inspired and courageous learners drop out of college to found tech companies, that millennials cannot make decisions without consulting their parents, that college professors have uniform political views, that students these days are fragile hothouse flowers, that it is not possible to achieve an inclusive campus culture without giving up on free speech, and that our colleges and universities are cut off from reality.</p>
+<p>In response, I want to claim that your Yale education will not only enlarge your imagination, advance your knowledge, and propel your career, but also that it will be absolutely critical to your capacity for playing a positive, leadership role in these increasingly polarized and fractious times. In particular, you are about to be taught by outstanding teachers and mentors, whose lives and careers constitute a powerful witness for the value of a disciplined, reasoned, and careful search for light and truth.</p>
+<p>What unites our faculty (from engineering to economics to English to environmental studies) is a stubborn skepticism about narratives that oversimplify issues, inflame the emotions, or misdirect the mind. No one is free of biases, of course, but as a community of scholars we subscribe to the ideal of judicious, searching inquiry in the service of reasoned discourse about the matters we investigate and care about the most. We would be lost as academics without this ideal, and our global societies would be lost if universities stopped being places defined by this ideal.</p>
+<p>I could supply you with a long list of the Yale faculty who have spent decades of their lives in laboratories, archives, libraries, and field settings collecting evidence to challenge some received notion, some distorted narrative, or some common wisdom that turned out to be highly questionable. Here are some examples:</p>
+<ul><li>Many people assume that our legal system was built almost entirely on a secular tradition. But Yale’s professor of medieval history, Anders Winroth, counters the false narrative that contemporary legal reasoning is a radical departure from medieval canon law by showing that in many ways it is rooted in it.</li>
+<li>Important cosmologies of the past depended on the assumption that the planet Earth is unique in the universe. Astronomy professor Debra Fischer has discovered many “worlds” (called exoplanets) orbiting around “suns” in solar systems spread throughout our galaxy.</li>
+<li>Medical researchers assumed for many years that gender has little to do with the prevalence and course of most illnesses, and that findings from studies with men automatically generalize to women. Carolyn Mazure, the director of the Women’s Health Research Center at Yale, has been investigating critical differences that gender makes in a wide range of biological systems and translates those findings into new health practices.</li>
+<li>Most classically trained economists have modeled human decisions as the result of careful calculations of costs and benefits. Nobel Prize winner Robert Shiller has emerged at the forefront of those who challenge the idea of rational individuals and markets, forcing major revisions to the theory of human behavior on which his field is based.</li>
+<li>When I was a graduate student in psychology, the dominant narrative held that humans learn virtually everything from experience. But psychology professor Karen Wynn has been teaching us that human infants have surprising innate capacities. Five-month olds appear able to make rudimentary arithmetic calculations. And psychology professor Laurie Santos, the new head of Silliman College, has been showing us that monkeys, too, seem pre-wired for such complex states as resentment, envy, and cognitive dissonance.</li>
+<li>I will close my list of examples by referencing professor of African American and American studies Hazel Carby. Her first book, <em>Reconstructing Womanhood</em>, was an exceptional exploration of the ways in which 19<sup>th</sup> century black women writers in America confronted and transformed the domestic and literary ideals of womanhood in white society. Professor Carby wrote a telling remark in her foreword to a book called <em>Silencing the Past</em>, highlighting the power of challenging false or incomplete narratives about the marginalized: “We learn how scanty evidence can be repositioned to generate new narratives, how silences can be made to speak for themselves. . .”<sup><a href="#ftnt2">[2]</a></sup></li>
+</ul><p>People naturally construct narratives to make sense of their world. I have been concerned to point out that in times of great stress, false narratives may dominate the public mind and public discourse, inflaming negative emotions and fanning discord. In our times especially, a wide array of instantaneous transmissions rapidly amplify such narratives. As a result, we sometimes find that anger, fear, or disgust can blind us to the complexity of the world and the responsibility to seek deeper understandings of important issues.    </p>
+<p>One point of your Yale education, then, is for you to become a more careful and critical thinker—to learn the difficult, painstaking skills you will need in order to evaluate evidence, to deliberate more broadly and more carefully, and to arrive at your own conclusions.</p>
+<p>More particularly, Yale is a place for you to learn how and why to gravitate toward people who view things differently than you do, who will test your most strongly held assumptions. It is also a place to learn why it takes extraordinary discipline, courage, and persistence—often over a lifetime—to construct new foundations for tackling the most intractable and challenging questions of our time. You have come to a place where civil disagreements and deep rethinking are the heart and soul of the enterprise, where we prize exceptional diversity of views alongside the greatest possible freedom of expression.</p>
+<p>So I trust that you will begin immediately to seek out what is best about this place: the faculty and staff and peers who will both inspire you and prepare you to become the investigators, visionaries, and leaders the world so sorely needs.</p>
+<p>None of us here can hope for a better world, or even for a more inclusive and exhilarating learning community at Yale, unless we succeed at this mission. You are in fact what gives us hope. You are why we became educators. You are why we are here.</p>
+<p>Welcome to Yale!</p>
+<hr /><p><a name="ftnt1" id="ftnt1"></a>[1] Gansberg, M. 37 Who Saw Murder Didn’t Call the Police. <em>New York Times </em>(1964, March 27).</p>
+<p><a name="ftnt2" id="ftnt2"></a>[2] Carby, H.V. (2015). Foreword to M.-R. Trouillot, <em>Silencing the past:  Power and the production of history </em>(originally published 1995). Boston:  Beacon Press. p. xiii.</p>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+<div  class="grid-3 pull-9 region region-sidebar-first sidebar yale-standard-sidebar" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="original-sidenav" data-set="append-sidenav">
+  <div id="additional-nav" class="addnav-ready">
+    <span class="additional-nav-button"><a id="additional-nav-button" role="button" aria-expanded="false" tabindex="0"><span class="ready">Additional Navigation</span><span class="close">Close</span></a></span>
+
+<nav class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1" role="navigation">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf has-children menu-mlid-1201 menu-notes-from-woodbridge-hall"><a href="/speeches-writings/notes-woodbridge-hall" title="">Notes from Woodbridge Hall</a></li>
+<li class="leaf has-children active-trail menu-mlid-1200 menu-speeches"><a href="/speeches-writings/speeches" title="" class="active-trail">Speeches</a></li>
+<li class="last leaf has-children menu-mlid-1203 menu-statements"><a href="/speeches-writings/statements" title="">Statements</a></li>
+</ul></div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>  </div>
+</main>
+  
+      <footer id="section-footer" class="section section-footer" role="contentinfo">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div  class="grid-2 region region-footer-first" id="region-footer-first">
+  <div  class="region-inner region-footer-first-inner">
+    <div class="footer-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-mark"><span class="element-invisible">Yale</span></a></div>
+  </div>
+</div>
+<div  class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <p class="copyright">
+      <a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &middot;
+      <a title="Yale Privacy policy" href="http://www.yale.edu/privacy-policy">Privacy policy</a> <br>
+      Copyright &copy; 2018 Yale University &middot; All rights reserved
+    </p>
+    <div class="block block-footer-message block-footer-message-footer-message odd block-without-title" id="block-footer-message-footer-message">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <p>105 Wall St., New Haven, CT 06511 | P.O. Box 208229, New Haven, CT 06520-8229</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="grid-4 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu sharing block-menu-social-buttons block-menu-menu-social-buttons odd block-without-title" id="block-menu-menu-social-buttons">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-facebook"><a href="https://www.facebook.com/YaleUniversity" class="fa fa-facebook-square"><span>Facebook</span></a></li>
+<li class="leaf menu-twitter"><a href="http://www.twitter.com/yale" class="fa fa-twitter"><span>Twitter</span></a></li>
+<li class="leaf menu-itunes"><a href="http://itunes.yale.edu" class="fa fa-apple"><span>iTunes</span></a></li>
+<li class="leaf menu-youtube"><a href="http://www.youtube.com/yale" class="fa fa-youtube-play"><span>YouTube</span></a></li>
+<li class="leaf menu-sina-weibo"><a href="http://weibo.com/yaleuniversity" class="fa fa-weibo"><span>Sina Weibo</span></a></li>
+<li class="last leaf menu-tumblr"><a href="http://yaleuniversity.tumblr.com" class="fa fa-tumblr-square"><span>Tumblr</span></a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></footer>
+  </div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_p4E-eBjXanNzvwx8r7khJqwcntEMZ06QCNQZgJtaDes.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"180521658b","applicationID":"51794093","transactionName":"Y1xWYkdTCkRRWxAPDFoWYURcHQ1ZVF0cSBNcSQ==","queueTime":0,"applicationTime":14,"atts":"TxtVFA9JGUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

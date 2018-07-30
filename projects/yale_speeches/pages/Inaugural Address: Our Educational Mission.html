@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="en" dir="ltr" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+
+  GGGGGGGGGGGG      GGGGGGGGGGG               fGGGGGG
+    ;GGGGG.             GGGi                     GGGG
+      CGGGG:           GGG                       GGGG
+       lGGGGt         GGL                        GGGG
+        .GGGGC       GG:                         GGGG
+          GGGGG    .GG.        ;CGGGGGGL         GGGG          .LGGGGGGGL
+           GGGGG  iGG        GGG:   ,GGGG        GGGG        tGGf     ;GGGC
+            LGGGGfGG        GGGG     CGGG;       GGGG       GGGL       GGGGt
+             lGGGGL                  CGGG;       GGGG      CGGGCCCCCCCCCCCCC
+              GGGG                   GGGG,       GGGG      GGGG
+              GGGG             tCGG; CGGG,       GGGG      GGGG
+              GGGG          GGGG     CGGG.       GGGG      GGGGL
+              GGGG         GGGGC     CGGG.       GGGG      :GGGGC          :
+             ,GGGGG.       GGGGG:  .LGGGGG,.tG   GGGG        GGGGGGt,..,fGC
+        ,GGGGGGGGGGGGGGf    iGGGGGG   CGGGGC  GGGGGGGGGG       LGGGGGGGC
+
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, minimum-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/speeches-writings/speeches/inaugural-address-our-educational-mission" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/1451" />
+  <title>Inaugural Address: Our Educational Mission
+ | Office of the President</title>
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+  <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+
+  <link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_LArH7Avt_jMWbKQlemaJinUm77NWHsvIR0KIq0fnWd4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_OeRMnEygp9KsxbWHSIhq3YfGrLGo9tVurh0rgb4IgSQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_cAhd4uy3Au41hEQEkVpwRFXE9gnieoBnnRomFcknFcU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_23.css?paqjc0" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_26.css?paqjc0" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_nBvgsRGFO8eRuGybs3zqi1R0F_76QazEf5KpSL9kQhA.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_059BxwQdO3W6gC_prw0ohrQj1fWv8MiFJkqt4YP0qJk.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://president.yale.edu/sites/all/libraries/respondjs/respond.min.js?paqjc0"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+Drupal.settings.ais = [{"name":"threshold-480","size":480},{"name":"threshold-768","size":768},{"name":"threshold-992","size":992},{"name":"threshold-1382","size":1382}];
+Drupal.settings.ais_method = "both-max";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_FCbVJy4R9U6dcYORv_5oUUdxqrzv2ypaZ3tWIRydWk4.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_JMLtTwkBrCpIk3h5ar8brb-5bR1lXKbrC7Jgd0kG0lw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-991898-16", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_CmJ8I_yZ56Qc__8wJuzi6qAv6LW5E8M68Xn7gIMcs0M.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"yalenew_standard","theme_token":"tn7f97Zo-npW4SewCip5WSJ9KjhBmaoLRAv7rkzJ7rk","js":{"sites\/all\/themes\/yalenew_base\/js\/jcaption.min.js":1,"sites\/all\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.js":1,"ais\/assets\/js\/ais.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.mousewheel.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/script.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/yalenew_base\/js\/modernizr.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/jquery.fitted.js":1,"sites\/all\/themes\/yalenew_base\/js\/fastclick.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/appendAround.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ais\/assets\/css\/ais.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/jscrollpane\/css\/jquery.jscrollpane.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/typogrify\/typogrify.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/yalenew_base\/css\/globalnew.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"ie::wide::sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/fluid\/yalenew-default-fluid-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/narrow\/yalenew-default-narrow-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1}},"collapsiblock":{"blocks":{"block-block-21":"3","block-block-22":"3","block-block-23":"3","block-views-lorimer-awardees-list-block-1":"1","block-block-24":"1","block-menu-block-1":"1","block-block-18":"1","block-block-15":"1","block-block-17":"1","block-menu-menu-banner-menu":"1","block-views-galleries-block-3":"1","block-menu-block-3":"1","block-block-25":"1","block-block-9":"1","block-views-rotating-header-image-block":"1","block-block-26":"1","block-block-16":"1","block-block-27":"1","block-block-28":"1","block-block-29":"1","block-block-30":"1","block-system-main-menu":"1","block-block-31":"1","block-block-32":"1","block-block-33":"1","block-block-34":"1","block-search-form":"1","block-block-35":"1","block-views-campus-messages-block-1":"1","block-views-06dc87f73e52cf986411e7afdc23757b":"1","block-block-36":"1","block-views-campus-messages-block-3":"1","block-views-rotating-feature-block":"1","block-views-feature-carousel-block-3":"1","block-block-37":"1","block-block-39":"1","block-block-38":"1","block-menu-block-4":"1","block-menu-block-5":"1","block-block-41":"1","block-block-46":"1","block-block-51":"1","block-block-66":"1","block-block-71":"1","block-block-76":"1","block-block-81":"1","block-block-86":"1"},"default_state":"1","slide_type":"1","slide_speed":"200","block_title":":header:first","block":"article.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":null},"jScrollPane":{"class":".scroll-pane"},"custom_search":{"form_target":"_self","solr":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/speeches-writings\/speeches\/inaugural-address-our-educational-mission":true},"omega":{"layouts":{"primary":"wide","order":["fluid","narrow","wide"],"queries":{"fluid":"all and (max-width: 739px)","narrow":"all and (min-width: 740px) and (max-width: 1024px)","wide":"all and (min-width: 1025px)"}}}});
+//--><!]]>
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1451 node-type-president-speeches yalenew-standard context-speeches-writings one-sidebar sidebar-first nav-blue-med block-carbon nav-serif block-font-sans block-outline">
+  <aside role='complementary' id="skip-link" aria-label="Skip to main content">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </aside>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header" role="banner">
+  <div id="zone-topper-wrapper" class="zone-wrapper zone-topper-wrapper clearfix yalenew-standard-topper">  <div id="zone-topper" class="zone zone-topper clearfix container-12">
+    <div  class="grid-3 region region-topper-first" id="region-topper-first">
+  <div class="region-inner region-topper-first-inner">
+      <div class="topper-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-univ"><span class="element-invisible">Yale University</span></a>
+      </div>
+
+	 <div id="moved-main-nav-wrapper">
+                <button aria-expanded="false" id="nav-ready" class="nav-ready"><span class="element-invisible">Open Main Navigation</span></button>
+                <div id="moved-main-nav" class="moved-main-nav" data-set="append-main-nav"></div>
+                <button aria-expanded="true" id="nav-close" class="nav-close nav-hidden"><span class="element-invisible">Close Main Navigation</span></button>
+        </div>
+
+  </div>
+</div>
+<div class="grid-9 region region-topper-second" id="region-topper-second">
+  <div class="region-inner region-topper-second-inner">
+    <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <form class="search-form" role="search" aria-label="Site Search" action="/speeches-writings/speeches/inaugural-address-our-educational-mission" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2"><i class="fa fa-search"></i> </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search this site" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input style="display:none;" type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-JpIHyQMig5fBmQUVjdS3vvY1IU372eRQWJZ7MepscWg" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-10 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+                                                  <h2 class="site-name"><a href="/" title="Home">Office of the President
+</a></h2>
+                                  </div>
+          </div>
+</div>
+  </div>
+</div></header>
+  
+      <main  id="section-content" class="section section-content" role="main">
+  <div id="section-content-inner">
+    
+
+<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  <div id="zone-menu" class="zone zone-menu clearfix yale-standard-menu container-12">
+
+<div id="original-main-nav-wrapper">
+  <div id="original-main-nav" data-set="append-main-nav">
+    <div id="main-nav">
+
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav id="main-menu-navigation" role="navigation" aria-label="Main Menu" class="navigation">
+                  <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first collapsed menu-about"><a href="/office-president">About</a></li>
+<li class="collapsed menu-programs-&amp;-outreach"><a href="/programs-outreach">Programs &amp; Outreach</a></li>
+<li class="collapsed menu-advisory-groups"><a href="/advisory-groups">Advisory Groups</a></li>
+<li class="expanded active-trail menu-speeches-&amp;-writings"><a href="/speeches-writings" class="active-trail">Speeches &amp; Writings</a></li>
+<li class="leaf menu-goals-for-yale"><a href="/goals">Goals for Yale</a></li>
+<li class="last leaf menu-news"><a href="/in-the-news">News</a></li>
+</ul>    </div>
+  </div>
+</div>
+    </nav>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  <div id="zone-content" class="zone zone-content clearfix container-12">
+          <div id="breadcrumb" class="grid-12"><nav class="breadcrumb" role="navigation" aria-label="You are here"><a href="/">Home</a><span class="tic"> > </span><a href="/speeches-writings">Speeches & Writings</a><span class="tic"> > </span><a href="/speeches-writings/speeches" title="">Speeches</a><span class="tic"> > </span>Inaugural Address: Our Educational Mission</nav></div>
+    
+    <div id="moved-sidenav-wrapper" class="moved-sidenav-wrapper grid-12">
+       <div id="moved-sidenav" class="moved-sidenav" data-set="append-sidenav"></div>
+    </div>
+
+        <div class="grid-9 push-3 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content" tabindex="-1"></a>
+                <h1 class="title" id="page-title">Inaugural Address: Our Educational Mission
+</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <article about="/speeches-writings/speeches/inaugural-address-our-educational-mission" typeof="sioc:Item foaf:Document" class="node node-president-speeches node-promoted node-published node-not-sticky author-7 odd clearfix" id="node-president-speeches-1451">
+  <!--    -->
+    <span property="dc:title" content="Inaugural Address: Our Educational Mission" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  <div class="content clearfix">
+    <div class="field field-name-field-speaker field-type-text field-label-inline clearfix"><div class="field-label">Speaker:&nbsp;</div><div class="field-items"><div class="field-item even">Peter Salovey, President of Yale University</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2013-10-13T00:00:00-04:00">Sunday, October 13, 2013</span></div></div></div><div class="field field-name-field-speech-location field-type-text field-label-inline clearfix"><div class="field-label">Event:&nbsp;</div><div class="field-items"><div class="field-item even">Presidential Inauguration, Woolsey Hall</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><span>With great joy, excitement, and hope, I accept the leadership of this university. I am honored to be granted the stewardship of this venerable institution; grateful for the trust of the Yale Corporation, faculty, and community; optimistic for our shared future.</span></p>
+<p><span>Today I am reminded of all those who have nurtured and supported me — my teachers along the way. That is why the anthem that will be sung later focuses on the words of the scholar </span>Shimon<span> ben </span>Zoma<span>: “Who is wise?” ben </span>Zoma<span> asks, “The one who learns from all ... I have gained understanding from all my teachers.”</span><sup>1</sup></p>
+<p><span>I especially want to recognize my teacher and my friend Richard Levin who led the rebuilding of our campus, extended its reach to all corners of the globe, and simultaneously strengthened the collaboration with our host city. I salute my fellow presidents and the other delegates who have graciously joined us, bringing their wisdom and support, and demonstrating by their presence the bond that connects all of us in higher education.</span></p>
+<p><span>I appreciate that so many of my former teachers and mentors are here today: from high school, college, and graduate school. And, of course, my friends and family from whom I have not just “gained understanding” but also who helped me develop whatever emotional intelligence I might have. There are friends who have joined us today who have known me for fifty years.</span></p>
+<p><span>My colleagues here at Yale, the hundreds of faculty, staff, students, and alumni who have spoken to me or written since my appointment: You, too, have been my teachers, especially these last few months. Thank you for your encouragement and support.</span></p>
+<h3>The Challenge Ahead</h3>
+<p><span>In the 312 years since its founding as The Collegiate School, Yale has advanced despite challenges along the way. The present moment of transition arrives at a time of uncertainty for all our country’s colleges and universities, including Yale. The recent recession has constrained the resources available to support the discovery of new knowledge. Some in public office have forgotten the indispensable role of higher education in the pursuit of the American Dream. Others overlook the ways that university research promotes economic growth through path-breaking discoveries. Students who would seek reasonable ways to finance an education or who would eagerly embrace citizenship in our country find themselves too often in the political crossfire. It is a sorrow to those of us who believe so deeply in it that some in our country can neither see nor accept the transformative power of a liberal education — how it teaches critical thinking, instills the joy of learning for learning’s own sake, exposes students to cultural and artistic experiences, transforms an individual’s identity, nurtures aspirations to give back, and enriches life.</span></p>
+<p>We are living in a world that will test our university, and we must remain rooted in our principles and focused on our founding mission. We must be clear-eyed about our strengths and weaknesses, and ambitious in fulfilling our promise.</p>
+<h3>Centrality of Students</h3>
+<p><span>Among the many treasures of this university — from the most ancient manuscripts to the most contemporary scientific discoveries — it is our students who are the greatest treasure of all. So today let me reaffirm that we are a research university that proudly and unapologetically focuses on our students. This is who we are and what we aspire to be.</span></p>
+<p>Professor Jim Rothman, who was awarded the Nobel Prize earlier this week, embodies this identity and aspiration. On Monday, he departed swiftly from the press conference, where he was extolled for his groundbreaking work unlocking the secrets of cells, to teach two seminars. A future Nobel laureate may have been sitting in a classroom with him that very afternoon. This is Yale’s calling as a research university, exemplified every day by faculty and students in our classrooms, laboratories, and studios.</p>
+<p>As we move forward, Yale must remain an institution of world-renowned research and scholarship, and of uplifting arts; of inspiring galleries, museums, and library collections. But above all, Yale University should always be celebrated for our commitment to teaching at every level, in every classroom  — in our undergraduate college, in graduate education, and in each of our professional schools. We have found our distinct place in the great constellation of excellence, and we should embrace it.</p>
+<p>But even as our mission remains clear, our work is unfinished. We have new problems to solve, new research to conduct, new students to teach, new challenges to meet.</p>
+<p>Make no mistake: As president, I will support, expand, and celebrate basic and problem-driven research in the fields of today, and those of tomorrow, from Science Hill to Hillhouse Avenue, to Cross Campus, to the Medical School, to the West Campus. However, I focus this afternoon on our mission of teaching and learning, and the ways our students use their learning when they leave this place.</p>
+<h3>Embracing a Revolution in Teaching and Learning</h3>
+<p><span>I emphasize our educational mission because we are in the midst of a teaching and learning revolution. How we respond — how we stay true to our best traditions while pioneering new frontiers — this is the challenge before us.</span></p>
+<p><span>Some principles have endured since our founding in 1701 and will continue to remain central to this university’s success: the place of the university in the discovery, transmission, and preservation of knowledge; the free and passionate exchange of ideas between minds young and old; the exhilaration of sharing new insights; the study of the past and of the great and beautiful works that stand as monuments to human thought and expression; the opportunity to instill in students the experience of true learning, of losing themselves in a book, experiment, or performance; the power of the individual teacher or mentor to influence thinking and transform lives. But, just as the composition of our faculty and the diversity of our student body have changed, our approach to teaching must continue to evolve as well. Yale must be exemplary, distinctive, and forward-looking.</span></p>
+<p><span>Throughout our history, Yale has been at the forefront of educational innovation. The same is true today. The School of Management has introduced a novel and interdisciplinary first-year curriculum; the Law School continues to educate more students for academia and judgeships than any of its sister institutions; the School of Medicine is redesigning medical education to break down barriers among basic science, clinical science, and patient care; the Department of Athletics aspires to turn our prized varsity teams into laboratories for the cultivation of leadership skills.</span></p>
+<p><span>Some of the best teaching in Yale College has emphasized active learning, engagement with our unmatched collections, and field experiences. Because of this, Yale College students — whether they major in the social sciences, humanities, or arts; in science, mathematics, or engineering — all graduate with a thirst for learning, a greater appreciation for creativity, and a respect for education that they bring to positions of leadership and civic life.</span></p>
+<p><span>The following quotation recently caught my eye: “If modern technology fulfills its promise, we are on the threshold of a revolution ... lectures can be taped and stored and selected for viewing on demand ... it behooves us to take the lead in adapting our ways to any arrangement which will make our resources publicly available as long as it does not dilute, distort, or distract us from our first mission.”</span><sup>2</sup><span> This is not a surprising observation until one realizes that these words were spoken nearly fifty years ago by Yale President Kingman Brewster at his inauguration. Those words were wise and visionary then. They remain so today.</span></p>
+<p><span>As new technologies and opportunities stimulate pedagogical change, we can use them to advance our mission. By continuing to harness technology, we can amplify the words of Yale’s great teachers so that our lectures and lessons can enlighten and inspire more people in more places.</span></p>
+<p><span>However, the most significant impact on our mission is likely to come from the use of digital resources that can improve teaching and stimulate learning here on campus. We need to develop courses that adapt in real time to the learning patterns of our students and liberate faculty members to engage in spirited intellectual interactions with them. In the College and elsewhere, the faculty will continue to chart Yale’s course, pursuing online efforts that are consistent with our commitment to develop the habits of mind associated with a liberal education without — as President Brewster said — diluting, distorting, or distracting us from our mission.</span></p>
+<h3>Access to a Yale College Education</h3>
+<p><span>Throughout our history, Yale has endeavored to be accessible to deserving students, no matter their backgrounds. Our admissions and financial aid policies have long reflected this commitment. But our college is among the smallest of our peer schools, and I believe we must expand access to undergraduate education by building two new residential colleges.</span></p>
+<p><span>The tradition of students living in small communities distinguishes and animates the Yale College experience. This arrangement allows our students to bring their educational lives into their homes: into the dining halls, common rooms, kitchens, libraries, theaters, and galleries within each of our twelve colleges, where teaching and learning also flourish.</span></p>
+<p><span>We must reaffirm the meaningful role of the residential colleges within our undergraduate program and explore how they can encourage the full development of the individual — intellectually, socially, and culturally. We must ask ourselves: Can life in our residential colleges — all of them — become even more extraordinary as we change and grow?</span></p>
+<p><span>The education and way of life we offer to Yale College students for four years is a precious gift, but today it is available to few. We are turning away brilliant, hard-working, and committed applicants who would invigorate our campus and improve our world through lives of leadership and service.</span></p>
+<p><span>Today we have the opportunity to extend Yale’s reach to more outstanding young people in our country and abroad. Yale has never had a stronger faculty; we have invested billions of dollars in our facilities; and we are fortunate to have remarkably generous alumni, parents, and friends. There are so many students reaching out for the opportunity of a Yale College education, applicants who now only can tour our campus as visitors, peering through the gates at beautiful courtyards and humbled by the vastness of Yale’s library and gallery collections. We can offer some of them a life-changing experience, and we should.</span></p>
+<h3>Yale and New Haven</h3>
+<p><span>Beyond our beautiful courtyards is another part of what makes Yale a special place for teaching and learning: the city of New Haven. Our city and university are forever coupled; our destiny is shared. Yale’s collaboration with our host city in the last twenty years is an innovative model that has inspired other urban colleges and universities. We have built a genuine partnership by creating a vibrant downtown surrounding campus. We have encouraged home ownership among our employees. We have forged new relationships with our unions. We have developed outreach programs with our unmatched array of professional schools, galleries, and museums, and we have worked closely with the New Haven Public Schools. We are grateful for the twenty-year partnership with Mayor </span>DeStefano<span>, and I look forward to collaborating with his successor.</span></p>
+<p><span>I want us to imagine how seeking new ways to teach and learn can lead to new directions in our alliance with New Haven. We must bolster economic development and create employment opportunities here in New Haven by putting our innovative, entrepreneurial inclinations to work. Already we are seeing the results of this intellectual entrepreneurship in the form of new businesses, technology, public policy ideas, and services imagined by Yale faculty, staff, and students, and pursued collaboratively with partners here in New Haven and throughout our state.</span></p>
+<p><span>We will continue these pursuits, but we will also do more to nurture student entrepreneurs from every school and department and encourage them to contribute to the local idea economy. After graduation, they can remain in New Haven and play active roles as civic, arts, and business leaders.</span></p>
+<p><span>And we need to ensure that our faculty members feel the same encouragement. We must ask: How can we better support interested faculty to develop and apply findings from their research?   How can we create a local ecosystem that supports entrepreneurs? How would a one-hour train between New York and New Haven change the intellectual and educational biosphere of our campus and city? We must ask these and other questions. But whatever we do, our innovative partnership with New Haven should continue to be a model for the nation.</span></p>
+<h3>A Global and More Unified University</h3>
+<p><span>As we deepen our partnership here in New Haven, we must also look beyond the city limits. Over nine hundred faculty members are pursuing research and scholarship overseas. It is impossible to state how profoundly this has changed what they teach and what our students learn here at home. </span>Yale-NUS<span> College is providing opportunities to develop novel approaches to liberal education in an international context. And, the growing numbers of international students on our campus and the interactions among international and domestic students studying and living together have enriched the educational experience here. We have created the foundation for Yale as a truly global university.</span></p>
+<p><span>Looking forward, I can imagine another way to engage many of our students and faculty while creating a more unified Yale. Eleven of the world’s twenty fastest-growing economies are African.</span><sup>3</sup><span> With the growing influence of the African continent on the world economy, as well as increased migration to, from, and within Africa, this is the moment to bring scholarship and teaching about Africa at Yale into sharper focus. Working collaboratively, we can foster new directions in research on Africa, identify new partnerships with those on the continent, and strengthen our recruitment efforts, all while emphasizing teaching and learning. Our current scholarship on Africa already draws on many disciplines throughout the university — from African language, history, and cultural traditions to global health research, to field experiments in development economics, to issues of sustainability, to research on emerging democracies, to theater projects with Tanzanian artists. For many years, my laboratory collaborated on HIV/AIDS prevention research in South Africa, and Marta is helping with an environmental and public health project involving the Masai.</span></p>
+<p><span>A greater focus on Africa is just one example of how we aspire to unite research with teaching and learning, how in our research laboratories and our classrooms we can effect change beyond them, and how we can bring the world to Yale and Yale to the world. I challenge our faculty and students to imagine other programs that will make the most of Yale’s strengths, creating links between scholars and students in integrated, campus-wide initiatives. As we write the next chapter in Yale’s great history, our goals are clear and achievable: a more unified Yale that pioneers innovative teaching; a more accessible Yale; a Yale that is more deeply rooted in New Haven and shares its innovations with its host city; an altogether excellent Yale.</span></p>
+<h3>An Interdependent Community</h3>
+<p><span>Our task — even while we grow in size, even while we commit to being a more diverse faculty, staff, and student body; more cross-disciplinary; and more global — is to retain Yale’s focus on the ties that bind us together, the sense of being a small, interdependent community, but one with an impressively broad scope. This intimacy and shared sense of purpose is what generates Yale’s distinctive spirit. It also allows us to aspire to make the university even more unified. As President Charles Seymour said on the day of his inauguration, “We are a university; that is, we are all members of a body dedicated to a single cause. There must be among us distinctions of function, but there can be no division of purpose.”</span><sup>4</sup></p>
+<p>I wish each of you could stand here and take in the incredible view from this podium. I see all of you — Yale faculty, alumni, parents, staff, students, and friends — and I feel grateful and privileged to have such partners charting the future with me. The spirit of Yale connects those of us gathered in this hall with our vast community of alumni and friends across this campus, this city, this nation, and the world.</p>
+<p>You have bestowed on me the greatest honor that a Yale faculty member and alumnus could possibly receive: the opportunity to serve as the university’s president. I cherish this trust, and I acknowledge my need for your help to fill my years as president with <em>urim v’thummim</em><strong>, </strong><em>lux et veritas</em>, light and truth.</p>
+<hr /><p>1. Shimon ben Zoma, writing in Pirkei Avot (Ethics of the Fathers), Chapter 4, Mishna 1(a).</p>
+<p>2. From the inaugural address of President Kingman Brewster, April 11, 1964.</p>
+<p>3. Shapiro, I. (May 23, 2013). “The Promise of Africa.” YaleGlobal Online. (<a href="http://yaleglobal.yale.edu/content/promise-africa">http://yaleglobal.yale.edu/content/promise-africa</a>).</p>
+<p>4. From the inaugural address of President Charles Seymour, October 8, 1937. That “single cause,” according to Seymour, is “the improvement of learning.”</p>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+<div  class="grid-3 pull-9 region region-sidebar-first sidebar yale-standard-sidebar" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="original-sidenav" data-set="append-sidenav">
+  <div id="additional-nav" class="addnav-ready">
+    <span class="additional-nav-button"><a id="additional-nav-button" role="button" aria-expanded="false" tabindex="0"><span class="ready">Additional Navigation</span><span class="close">Close</span></a></span>
+
+<nav class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1" role="navigation">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf has-children menu-mlid-1201 menu-notes-from-woodbridge-hall"><a href="/speeches-writings/notes-woodbridge-hall" title="">Notes from Woodbridge Hall</a></li>
+<li class="leaf has-children active-trail menu-mlid-1200 menu-speeches"><a href="/speeches-writings/speeches" title="" class="active-trail">Speeches</a></li>
+<li class="last leaf has-children menu-mlid-1203 menu-statements"><a href="/speeches-writings/statements" title="">Statements</a></li>
+</ul></div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>  </div>
+</main>
+  
+      <footer id="section-footer" class="section section-footer" role="contentinfo">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div  class="grid-2 region region-footer-first" id="region-footer-first">
+  <div  class="region-inner region-footer-first-inner">
+    <div class="footer-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-mark"><span class="element-invisible">Yale</span></a></div>
+  </div>
+</div>
+<div  class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <p class="copyright">
+      <a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &middot;
+      <a title="Yale Privacy policy" href="http://www.yale.edu/privacy-policy">Privacy policy</a> <br>
+      Copyright &copy; 2018 Yale University &middot; All rights reserved
+    </p>
+    <div class="block block-footer-message block-footer-message-footer-message odd block-without-title" id="block-footer-message-footer-message">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <p>105 Wall St., New Haven, CT 06511 | P.O. Box 208229, New Haven, CT 06520-8229</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="grid-4 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu sharing block-menu-social-buttons block-menu-menu-social-buttons odd block-without-title" id="block-menu-menu-social-buttons">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-facebook"><a href="https://www.facebook.com/YaleUniversity" class="fa fa-facebook-square"><span>Facebook</span></a></li>
+<li class="leaf menu-twitter"><a href="http://www.twitter.com/yale" class="fa fa-twitter"><span>Twitter</span></a></li>
+<li class="leaf menu-itunes"><a href="http://itunes.yale.edu" class="fa fa-apple"><span>iTunes</span></a></li>
+<li class="leaf menu-youtube"><a href="http://www.youtube.com/yale" class="fa fa-youtube-play"><span>YouTube</span></a></li>
+<li class="leaf menu-sina-weibo"><a href="http://weibo.com/yaleuniversity" class="fa fa-weibo"><span>Sina Weibo</span></a></li>
+<li class="last leaf menu-tumblr"><a href="http://yaleuniversity.tumblr.com" class="fa fa-tumblr-square"><span>Tumblr</span></a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></footer>
+  </div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_p4E-eBjXanNzvwx8r7khJqwcntEMZ06QCNQZgJtaDes.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"180521658b","applicationID":"51794093","transactionName":"Y1xWYkdTCkRRWxAPDFoWdVVBWwtZH1YLAgZrSVVRUG0SXlVP","queueTime":0,"applicationTime":222,"atts":"TxtVFA9JGUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

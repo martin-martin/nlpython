@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="en" dir="ltr" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+
+  GGGGGGGGGGGG      GGGGGGGGGGG               fGGGGGG
+    ;GGGGG.             GGGi                     GGGG
+      CGGGG:           GGG                       GGGG
+       lGGGGt         GGL                        GGGG
+        .GGGGC       GG:                         GGGG
+          GGGGG    .GG.        ;CGGGGGGL         GGGG          .LGGGGGGGL
+           GGGGG  iGG        GGG:   ,GGGG        GGGG        tGGf     ;GGGC
+            LGGGGfGG        GGGG     CGGG;       GGGG       GGGL       GGGGt
+             lGGGGL                  CGGG;       GGGG      CGGGCCCCCCCCCCCCC
+              GGGG                   GGGG,       GGGG      GGGG
+              GGGG             tCGG; CGGG,       GGGG      GGGG
+              GGGG          GGGG     CGGG.       GGGG      GGGGL
+              GGGG         GGGGC     CGGG.       GGGG      :GGGGC          :
+             ,GGGGG.       GGGGG:  .LGGGGG,.tG   GGGG        GGGGGGt,..,fGC
+        ,GGGGGGGGGGGGGGf    iGGGGGG   CGGGGC  GGGGGGGGGG       LGGGGGGGC
+
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, minimum-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/speeches-writings/speeches/strangers-strange-land" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/7341" />
+  <title>Strangers in a Strange Land
+ | Office of the President</title>
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+  <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+
+  <link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_LArH7Avt_jMWbKQlemaJinUm77NWHsvIR0KIq0fnWd4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_OeRMnEygp9KsxbWHSIhq3YfGrLGo9tVurh0rgb4IgSQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_cAhd4uy3Au41hEQEkVpwRFXE9gnieoBnnRomFcknFcU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_23.css?paqjc0" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_26.css?paqjc0" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_nBvgsRGFO8eRuGybs3zqi1R0F_76QazEf5KpSL9kQhA.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_059BxwQdO3W6gC_prw0ohrQj1fWv8MiFJkqt4YP0qJk.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://president.yale.edu/sites/all/libraries/respondjs/respond.min.js?paqjc0"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+Drupal.settings.ais = [{"name":"threshold-480","size":480},{"name":"threshold-768","size":768},{"name":"threshold-992","size":992},{"name":"threshold-1382","size":1382}];
+Drupal.settings.ais_method = "both-max";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_FCbVJy4R9U6dcYORv_5oUUdxqrzv2ypaZ3tWIRydWk4.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_JMLtTwkBrCpIk3h5ar8brb-5bR1lXKbrC7Jgd0kG0lw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-991898-16", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_CmJ8I_yZ56Qc__8wJuzi6qAv6LW5E8M68Xn7gIMcs0M.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"yalenew_standard","theme_token":"CHozj9GEwtZEvayrovjLzpNOnb5tQUaX45U41W90qp4","js":{"sites\/all\/themes\/yalenew_base\/js\/jcaption.min.js":1,"sites\/all\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.js":1,"ais\/assets\/js\/ais.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.mousewheel.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/script.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/yalenew_base\/js\/modernizr.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/jquery.fitted.js":1,"sites\/all\/themes\/yalenew_base\/js\/fastclick.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/appendAround.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ais\/assets\/css\/ais.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/jscrollpane\/css\/jquery.jscrollpane.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/typogrify\/typogrify.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/yalenew_base\/css\/globalnew.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"ie::wide::sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/fluid\/yalenew-default-fluid-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/narrow\/yalenew-default-narrow-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1}},"collapsiblock":{"blocks":{"block-block-21":"3","block-block-22":"3","block-block-23":"3","block-views-lorimer-awardees-list-block-1":"1","block-block-24":"1","block-menu-block-1":"1","block-block-18":"1","block-block-15":"1","block-block-17":"1","block-menu-menu-banner-menu":"1","block-views-galleries-block-3":"1","block-menu-block-3":"1","block-block-25":"1","block-block-9":"1","block-views-rotating-header-image-block":"1","block-block-26":"1","block-block-16":"1","block-block-27":"1","block-block-28":"1","block-block-29":"1","block-block-30":"1","block-system-main-menu":"1","block-block-31":"1","block-block-32":"1","block-block-33":"1","block-block-34":"1","block-search-form":"1","block-block-35":"1","block-views-campus-messages-block-1":"1","block-views-06dc87f73e52cf986411e7afdc23757b":"1","block-block-36":"1","block-views-campus-messages-block-3":"1","block-views-rotating-feature-block":"1","block-views-feature-carousel-block-3":"1","block-block-37":"1","block-block-39":"1","block-block-38":"1","block-menu-block-4":"1","block-menu-block-5":"1","block-block-41":"1","block-block-46":"1","block-block-51":"1","block-block-66":"1","block-block-71":"1","block-block-76":"1","block-block-81":"1","block-block-86":"1"},"default_state":"1","slide_type":"1","slide_speed":"200","block_title":":header:first","block":"article.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":null},"jScrollPane":{"class":".scroll-pane"},"custom_search":{"form_target":"_self","solr":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/speeches-writings\/speeches\/strangers-strange-land":true},"omega":{"layouts":{"primary":"wide","order":["fluid","narrow","wide"],"queries":{"fluid":"all and (max-width: 739px)","narrow":"all and (min-width: 740px) and (max-width: 1024px)","wide":"all and (min-width: 1025px)"}}}});
+//--><!]]>
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-7341 node-type-president-speeches yalenew-standard context-speeches-writings one-sidebar sidebar-first nav-blue-med block-carbon nav-serif block-font-sans block-outline">
+  <aside role='complementary' id="skip-link" aria-label="Skip to main content">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </aside>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header" role="banner">
+  <div id="zone-topper-wrapper" class="zone-wrapper zone-topper-wrapper clearfix yalenew-standard-topper">  <div id="zone-topper" class="zone zone-topper clearfix container-12">
+    <div  class="grid-3 region region-topper-first" id="region-topper-first">
+  <div class="region-inner region-topper-first-inner">
+      <div class="topper-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-univ"><span class="element-invisible">Yale University</span></a>
+      </div>
+
+	 <div id="moved-main-nav-wrapper">
+                <button aria-expanded="false" id="nav-ready" class="nav-ready"><span class="element-invisible">Open Main Navigation</span></button>
+                <div id="moved-main-nav" class="moved-main-nav" data-set="append-main-nav"></div>
+                <button aria-expanded="true" id="nav-close" class="nav-close nav-hidden"><span class="element-invisible">Close Main Navigation</span></button>
+        </div>
+
+  </div>
+</div>
+<div class="grid-9 region region-topper-second" id="region-topper-second">
+  <div class="region-inner region-topper-second-inner">
+    <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <form class="search-form" role="search" aria-label="Site Search" action="/speeches-writings/speeches/strangers-strange-land" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2"><i class="fa fa-search"></i> </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search this site" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input style="display:none;" type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-HyMvA-L7JMeDhUSHbk_45vJt-RMBHIfV4o84v_vG6ic" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-10 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+                                                  <h2 class="site-name"><a href="/" title="Home">Office of the President
+</a></h2>
+                                  </div>
+          </div>
+</div>
+  </div>
+</div></header>
+  
+      <main  id="section-content" class="section section-content" role="main">
+  <div id="section-content-inner">
+    
+
+<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  <div id="zone-menu" class="zone zone-menu clearfix yale-standard-menu container-12">
+
+<div id="original-main-nav-wrapper">
+  <div id="original-main-nav" data-set="append-main-nav">
+    <div id="main-nav">
+
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav id="main-menu-navigation" role="navigation" aria-label="Main Menu" class="navigation">
+                  <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first collapsed menu-about"><a href="/office-president">About</a></li>
+<li class="collapsed menu-programs-&amp;-outreach"><a href="/programs-outreach">Programs &amp; Outreach</a></li>
+<li class="collapsed menu-advisory-groups"><a href="/advisory-groups">Advisory Groups</a></li>
+<li class="expanded active-trail menu-speeches-&amp;-writings"><a href="/speeches-writings" class="active-trail">Speeches &amp; Writings</a></li>
+<li class="leaf menu-goals-for-yale"><a href="/goals">Goals for Yale</a></li>
+<li class="last leaf menu-news"><a href="/in-the-news">News</a></li>
+</ul>    </div>
+  </div>
+</div>
+    </nav>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  <div id="zone-content" class="zone zone-content clearfix container-12">
+          <div id="breadcrumb" class="grid-12"><nav class="breadcrumb" role="navigation" aria-label="You are here"><a href="/">Home</a><span class="tic"> > </span><a href="/speeches-writings">Speeches & Writings</a><span class="tic"> > </span><a href="/speeches-writings/speeches" title="">Speeches</a><span class="tic"> > </span>Strangers in a Strange Land</nav></div>
+    
+    <div id="moved-sidenav-wrapper" class="moved-sidenav-wrapper grid-12">
+       <div id="moved-sidenav" class="moved-sidenav" data-set="append-sidenav"></div>
+    </div>
+
+        <div class="grid-9 push-3 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content" tabindex="-1"></a>
+                <h1 class="title" id="page-title">Strangers in a Strange Land
+</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <article about="/speeches-writings/speeches/strangers-strange-land" typeof="sioc:Item foaf:Document" class="node node-president-speeches node-promoted node-published node-not-sticky author-2541 odd clearfix" id="node-president-speeches-7341">
+  <!--    -->
+    <span property="dc:title" content="Strangers in a Strange Land" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  <div class="content clearfix">
+    <div class="field field-name-field-speaker field-type-text field-label-inline clearfix"><div class="field-label">Speaker:&nbsp;</div><div class="field-items"><div class="field-item even">Peter Salovey, President of Yale University</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-05-20T00:00:00-04:00">Saturday, May 20, 2017</span></div></div></div><div class="field field-name-field-speech-location field-type-text field-label-inline clearfix"><div class="field-label">Event:&nbsp;</div><div class="field-items"><div class="field-item even">Baccalaureate Address, Yale College Class of 2017</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>***</p>
+<p>Graduates of the Class of 2017, family members, and friends. It is so good to be here with you today, a day filled with joy and hope . . . and, I am sure, a bit of pride as well.</p>
+<p>There is a wonderful Yale tradition that I would like to honor right now:</p>
+<p style="margin-left:.5in">May I ask all of the families and friends here today to rise and recognize the outstanding—and graduating—members of the Class of 2017?</p>
+<p style="margin-left:.5in">And now, may I ask the Class of 2017 to consider all those who have supported <em>your</em> arrival at this milestone, and to please rise and recognize <em>them</em>?</p>
+<p style="margin-left:.5in">Thank you!</p>
+<p>***</p>
+<p>Last month I flew to California to celebrate Passover with my family. As many of you know, this is the holiday that memorializes the experience of Jews as slaves in Egypt and then celebrates their deliverance from bondage. Through reading a liturgical text called the <em>Haggadah</em> and eating ritual foods, everyone at the Passover Seder is invited to reflect on this history as if they had experienced it themselves.</p>
+<p>The Passover themes of slavery and freedom resonate as clearly today as they did millennia ago. Many contemporary <em>Haggadot</em> [plural of Haggadah] reference modern struggles, such as African-Americans’ fight for emancipation and civil rights and present-day efforts to end human trafficking.</p>
+<p>My family uses the traditional <em>Haggadah</em> sponsored by Maxwell House Coffee since 1932. Apparently, it was also used by former President Obama at the White House’s annual Seder! My favorite passage comes early in the evening. We are reminded that because <em>we </em>were strangers in the land of Egypt, we therefore must welcome strangers to our own Seder. We recite, “Let all those who are hungry, enter and eat . . . all who are in distress come and celebrate Passover” with us.<a href="#_ftn1" name="_ftnref1" title="" id="_ftnref1">[1]</a></p>
+<p>These sentiments go back a long way. They are written in Aramaic, the everyday spoken language of much of the Middle East from 2,000 to 3,000 years ago, so that they could be easily understood by those who might have responded to the offer. In the past, the head of the household might open the door to the home and read these words, inviting all who passed by to come in and join the celebration.</p>
+<p>Remembering what it was like to be a stranger is not only important at Passover. We are told repeatedly in the Jewish scripture to show kindness toward strangers. The Torah warns against harming a stranger anywhere from thirty-five to forty-six distinct times, depending on how it is translated. In Exodus, we are told, “You shall not wrong a stranger or oppress him, for you were strangers in the land of Egypt.”<a href="#_ftn2" name="_ftnref2" title="" id="_ftnref2">[2]</a> Elsewhere in Exodus, this is written as “stranger[s] in a strange land”—the inspiration for the title of the popular science fiction novel by Robert Heinlein.<a href="#_ftn3" name="_ftnref3" title="" id="_ftnref3">[3]</a> And again in Leviticus we read, “When a stranger resides with you in your land, you shall not do him wrong. The stranger who resides with you shall be to you as the native among you, and you shall love him as yourself, for you were aliens in the land of Egypt.”<a href="#_ftn4" name="_ftnref4" title="" id="_ftnref4">[4]</a></p>
+<p>Judaism is not alone in this concern for the stranger. In the Parable of the Last Judgment, Jesus says, “I was a foreigner and you welcomed me.”<a href="#_ftn5" name="_ftnref5" title="" id="_ftnref5">[5]</a> In his interpretation of this passage, the bishop emeritus of the Archdiocese of Hartford, Peter Rosazza, says that welcoming the foreigner is equivalent to welcoming Jesus. Later, in the Epistle to the Hebrews, we are advised: “Do not neglect to show hospitality to strangers, for by this some have entertained angels without knowing it.”<a href="#_ftn6" name="_ftnref6" title="" id="_ftnref6">[6]</a> Imagine if all strangers—all foreigners—were treated as if they were divine messengers!</p>
+<p>The Qur’an instructs Muslims similarly: “And do good unto your parents, and near of kin, and unto orphans, and the needy, and the neighbor from among your own people, and the neighbor who is a stranger, and the friend by your side, and the wayfarer. . .”<a href="#_ftn7" name="_ftnref7" title="" id="_ftnref7">[7]</a></p>
+<p>There is an ancient <a href="https://en.wikipedia.org/wiki/Hinduism" title="Hinduism">Hindu</a> scripture that says, “The guest is equivalent to <a href="https://en.wikipedia.org/wiki/God" title="God">God</a>.”<a href="#_ftn8" name="_ftnref8" title="" id="_ftnref8">[8]</a> Hospitality to guests and strangers—called <em>Manushya Yajna</em>—is one of the “five great sacrifices” to be carried out daily according to Vedic practice.</p>
+<p>Turning back to the Hebrew Bible, we find this reminder, worded a bit differently from the others: “You shall not oppress a stranger, <em>as you yourself know the feelings of a stranger</em>, for you also were strangers in the land of Egypt.”<a href="#_ftn9" name="_ftnref9" title="" id="_ftnref9">[9]</a> This is also translated quite beautifully as “for you <em>know the heart </em>of a stranger.”</p>
+<p>Psychologists call this kind of understanding—knowing the heart of another—empathy and have linked it to acting ethically and morally.<a href="#_ftn10" name="_ftnref10" title="" id="_ftnref10">[10]</a> We are more likely to treat other people well if we can find ways to empathize with them. Here, we are told how to act—how not to mistreat strangers—because we can understand their feelings, their hearts.</p>
+<p>But is it easy to show empathy? Not always. This is one reason why no group, no religion, has ever completely lived up to its own ideals regarding the treatment of outsiders. Intolerance and oppression have been a ubiquitous feature of many human societies. When we are feeling loss, threat, or fear, it is hard for us to put ourselves in someone else’s shoes. In fact, stressful and uncertain times may lead us to point fingers at others—to search for convenient scapegoats—rather than empathize with them.</p>
+<p>Today, it is not only the immigrants and refugees among us who are strangers in a strange land. Across the United States and even across the world, we have become strangers to each other. We find it difficult to understand and engage perspectives with which we disagree. We can’t imagine how people in our own country can feel and act as they do. And despite being in constant communication, we feel increasingly disconnected from one another.   </p>
+<p>In the last thirty years, according to a recent article in <em>Forbes</em>, the number of Americans who report they have no friends—zero—has tripled.<a href="#_ftn11" name="_ftnref11" title="" id="_ftnref11">[11]</a> How can this be, when we can “friend” hundreds of individuals on social media with a tap of a finger? Yet the more one’s life is oriented around the Internet, the lonelier one tends to be. It is easier to email, text, and tweet than put away our smart phones and make a new friend with a living, breathing human.</p>
+<p>This is not a new phenomenon, and the Internet may attract more than its fair share of blame. At the turn of the twentieth century, the French sociologist Emile Durkheim wrote about the emergence of <em>anomie</em>—a sense of being unmoored or unconnected to social norms and institutions. He thought that great changes in his lifetime—the rise of industry, mass production, and the growth of cities—were responsible for these feelings of disconnect.</p>
+<p>A century later, but a few years before concerns about the Internet and social media started to shape this conversation, political scientist Robert Putnam used the vivid metaphor of “bowling alone” to describe the general breakdown of traditional social networks in contemporary society.<a href="#_ftn12" name="_ftnref12" title="" id="_ftnref12">[12]</a> Putnam found that we are no longer a community of joiners; we no longer define ourselves by clubs and civic organizations that represent our hobbies and interests.</p>
+<p>So what happens when social ties weaken? How do we feel secure when we are no longer imbedded deeply in social networks or community groups? One possible outcome is that we retreat into ourselves. We may spend a lot of time staring into the mirror, attending only to information that is consistent with our preexisting beliefs. We focus on our own doubts, vulnerabilities, and preoccupations. We become isolated and lonely.</p>
+<p>“We have all known the long loneliness,” wrote Dorothy Day, the twentieth-century social activist. “And we have learned that the only solution is love and that love comes with community.”<a href="#_ftn13" name="_ftnref13" title="" id="_ftnref13">[13]</a></p>
+<p>Without community, without empathy, we cannot see ourselves in the eyes of the strangers among us. Instead, those strangers are at best ignored and at worst demonized. And despite the teachings of Hinduism, Islam, Christianity, Judaism, and many other traditions to the contrary, we no longer welcome strangers to our table. Rather, we build walls to keep them away from us.</p>
+<p>Perhaps on a beautiful sunny afternoon in the last four years you took a walk over to the Grove Street Cemetery and found the tombstone of Kingman Brewster, Yale’s seventeenth president. Brewster led this university during a tumultuous period in its history and in the nation’s history. He oversaw coeducation and tried to keep the peace while the Black Panther trials were held in New Haven.</p>
+<p>Brewster’s epitaph reads, “The presumption of innocence is not only a legal concept; in common law and in common sense, it requires a generosity of spirit toward the stranger, the expectation of what is best, rather than what is worst, in the other.” Brewster was familiar with conflict; he knew how deeply people could disagree with one another, how fear and misunderstanding could divide them. Yet he expected the best in others: that was <em>his</em> common sense.</p>
+<p>Let it be ours, too. Empathy is a powerful tool. Ta-Nehisi Coates, the writer and social critic, has called for “a <em>muscular</em> empathy rooted in curiosity.”<a href="#_ftn14" name="_ftnref14" title="" id="_ftnref14">[14]</a> Such a muscular empathy should inspire us and spur us to action—to serve others and our communities.</p>
+<p>Members of the Class of 2017, you have just spent four years on a campus that strives to be welcoming and inclusive. You have made lasting friendships with people from a variety of backgrounds and walks of life. Although you were strangers to each other when you met, together you helped build a strong community here at Yale. You have all stood to sing:</p>
+<p style="margin-left:.5in">The seasons come, the seasons go,<br />
+The earth is green or white with snow,<br />
+But time and change shall naught avail<br />
+To break the friendships formed at Yale.</p>
+<p>I urge you to take these experiences out into the world—a world that desperately needs your service, your curiosity, and yes, your empathy. I hope you identify with the plight of the other, walking a mile in the shoes of a stranger. By welcoming guests, by doing good to strangers, by knowing the hearts of others, you may well entertain angels.</p>
+<p class="rtecenter">***</p>
+<p><em>Members of the Class of 2017 (please rise):</em></p>
+<p>As you go out on to a “world [that is] all before [you] . . . hand in hand with wandering steps and slow,”<a href="#_ftn15" name="_ftnref15" title="" id="_ftnref15">[15]</a> bring to that world all that your Yale education has given you: the ability to appreciate complexity even while seeking simplicity, to engage critically even while listening respectfully, to recognize your responsibilities while finding pleasure in your new communities, and to welcome into these communities the strangers among us.</p>
+<p>We are delighted to salute your accomplishments, and we are proud of your achievements. Remember to give thanks for all that has brought you to this day. And go forth from this place with grateful hearts, paying back the gifts you have received here by using your minds, voices, and hands to strengthen your new communities and your world.</p>
+<p>Congratulations, Class of 2017!</p>
+<div>
+<hr /><div>
+<p><a href="#_ftnref1" name="_ftn1" title="" id="_ftn1">[1]</a> <em>Deluxe Edition of the Passover Haggadah</em> (1965).  General Foods Corporation.</p>
+</div>
+<div>
+<p><a href="#_ftnref2" name="_ftn2" title="" id="_ftn2">[2]</a> Exodus 22:21, <em>New American Standard Bible.</em></p>
+</div>
+<div>
+<p><a href="#_ftnref3" name="_ftn3" title="" id="_ftn3">[3]</a> Exodus 2:22, <em>King James Version</em> (for example).</p>
+</div>
+<div>
+<p><a href="#_ftnref4" name="_ftn4" title="" id="_ftn4">[4]</a> Leviticus 19:33-34, <em>New American Standard Bible.</em></p>
+</div>
+<div>
+<p><a href="#_ftnref5" name="_ftn5" title="" id="_ftn5">[5]</a> Matthew 25:35, <em>English Standard Version. </em>The <em>New American Standard Bible</em> says, “I was a stranger, and you invited me in.”</p>
+</div>
+<div>
+<p><a href="#_ftnref6" name="_ftn6" title="" id="_ftn6">[6]</a> Hebrews 13:2, <em>New American Standard Bible.</em></p>
+</div>
+<div>
+<p><a href="#_ftnref7" name="_ftn7" title="" id="_ftn7">[7]</a> An-Nisa’ 4:36.</p>
+</div>
+<div>
+<p><a href="#_ftnref8" name="_ftn8" title="" id="_ftn8">[8]</a> Atithi Devo Bhava, from the <a href="https://en.wikipedia.org/wiki/Taittiriya_Upanishad" title="Taittiriya Upanishad">Taittiriya Upanishad</a>, Shikshavalli, I.20.</p>
+</div>
+<div>
+<p><a href="#_ftnref9" name="_ftn9" title="" id="_ftn9">[9]</a> Exodus 23:9, <em>New American Standard Bible.</em></p>
+</div>
+<div>
+<p><a href="#_ftnref10" name="_ftn10" title="" id="_ftn10">[10]</a> For a different point of view, see my colleague Paul Bloom’s provocative new book, <em>Against Empathy:  The Case for Rational Compassion. </em></p>
+</div>
+<div>
+<p><a href="#_ftnref11" name="_ftn11" title="" id="_ftn11">[11]</a> Beaton, C. (February 9, 2017). Why millennials are lonely. <em>Forbes</em>.</p>
+</div>
+<div>
+<p><a href="#_ftnref12" name="_ftn12" title="" id="_ftn12">[12]</a> Putnam, R.D. (2000). <em>Bowling Alone: The Collapse and Revival of American Community.</em> New York: Simon &amp; Schuster.</p>
+</div>
+<div>
+<p><a href="#_ftnref13" name="_ftn13" title="" id="_ftn13">[13]</a> Day, D. (1952). <a href="https://en.wikipedia.org/wiki/The_Long_Loneliness" title="The Long Loneliness"><em>The Long Loneliness</em></a><em>: The Autobiography of Dorothy Day</em>. New York: Harper and Brothers.</p>
+</div>
+<div>
+<p><a href="#_ftnref14" name="_ftn14" title="" id="_ftn14">[14]</a> <a href="https://www.theatlantic.com/national/archive/2011/12/a-muscular-empathy/249984/">https://www.theatlantic.com/national/archive/2011/12/a-muscular-empathy/...</a></p>
+</div>
+<div>
+<p><a href="#_ftnref15" name="_ftn15" title="" id="_ftn15">[15]</a> This quotation is from John Milton’s <em>Paradise Lost,</em> a favorite passage of mine to read on Commencement weekend at Yale: “Some natural tears they dropped, but wiped them soon; The world was all before them, where to choose Their place of rest, and Providence their guide; They, hand in hand, with wandering steps and slow, Through Eden took their solitary way.”</p>
+</div>
+</div>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+<div  class="grid-3 pull-9 region region-sidebar-first sidebar yale-standard-sidebar" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="original-sidenav" data-set="append-sidenav">
+  <div id="additional-nav" class="addnav-ready">
+    <span class="additional-nav-button"><a id="additional-nav-button" role="button" aria-expanded="false" tabindex="0"><span class="ready">Additional Navigation</span><span class="close">Close</span></a></span>
+
+<nav class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1" role="navigation">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf has-children menu-mlid-1201 menu-notes-from-woodbridge-hall"><a href="/speeches-writings/notes-woodbridge-hall" title="">Notes from Woodbridge Hall</a></li>
+<li class="leaf has-children active-trail menu-mlid-1200 menu-speeches"><a href="/speeches-writings/speeches" title="" class="active-trail">Speeches</a></li>
+<li class="last leaf has-children menu-mlid-1203 menu-statements"><a href="/speeches-writings/statements" title="">Statements</a></li>
+</ul></div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>  </div>
+</main>
+  
+      <footer id="section-footer" class="section section-footer" role="contentinfo">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div  class="grid-2 region region-footer-first" id="region-footer-first">
+  <div  class="region-inner region-footer-first-inner">
+    <div class="footer-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-mark"><span class="element-invisible">Yale</span></a></div>
+  </div>
+</div>
+<div  class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <p class="copyright">
+      <a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &middot;
+      <a title="Yale Privacy policy" href="http://www.yale.edu/privacy-policy">Privacy policy</a> <br>
+      Copyright &copy; 2018 Yale University &middot; All rights reserved
+    </p>
+    <div class="block block-footer-message block-footer-message-footer-message odd block-without-title" id="block-footer-message-footer-message">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <p>105 Wall St., New Haven, CT 06511 | P.O. Box 208229, New Haven, CT 06520-8229</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="grid-4 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu sharing block-menu-social-buttons block-menu-menu-social-buttons odd block-without-title" id="block-menu-menu-social-buttons">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-facebook"><a href="https://www.facebook.com/YaleUniversity" class="fa fa-facebook-square"><span>Facebook</span></a></li>
+<li class="leaf menu-twitter"><a href="http://www.twitter.com/yale" class="fa fa-twitter"><span>Twitter</span></a></li>
+<li class="leaf menu-itunes"><a href="http://itunes.yale.edu" class="fa fa-apple"><span>iTunes</span></a></li>
+<li class="leaf menu-youtube"><a href="http://www.youtube.com/yale" class="fa fa-youtube-play"><span>YouTube</span></a></li>
+<li class="leaf menu-sina-weibo"><a href="http://weibo.com/yaleuniversity" class="fa fa-weibo"><span>Sina Weibo</span></a></li>
+<li class="last leaf menu-tumblr"><a href="http://yaleuniversity.tumblr.com" class="fa fa-tumblr-square"><span>Tumblr</span></a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></footer>
+  </div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_p4E-eBjXanNzvwx8r7khJqwcntEMZ06QCNQZgJtaDes.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"180521658b","applicationID":"51794093","transactionName":"Y1xWYkdTCkRRWxAPDFoWdVVBWwtZH1YLAgZrSVVRUG0SXlVP","queueTime":0,"applicationTime":260,"atts":"TxtVFA9JGUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

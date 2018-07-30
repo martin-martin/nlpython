@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="en" dir="ltr" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+
+  GGGGGGGGGGGG      GGGGGGGGGGG               fGGGGGG
+    ;GGGGG.             GGGi                     GGGG
+      CGGGG:           GGG                       GGGG
+       lGGGGt         GGL                        GGGG
+        .GGGGC       GG:                         GGGG
+          GGGGG    .GG.        ;CGGGGGGL         GGGG          .LGGGGGGGL
+           GGGGG  iGG        GGG:   ,GGGG        GGGG        tGGf     ;GGGC
+            LGGGGfGG        GGGG     CGGG;       GGGG       GGGL       GGGGt
+             lGGGGL                  CGGG;       GGGG      CGGGCCCCCCCCCCCCC
+              GGGG                   GGGG,       GGGG      GGGG
+              GGGG             tCGG; CGGG,       GGGG      GGGG
+              GGGG          GGGG     CGGG.       GGGG      GGGGL
+              GGGG         GGGGC     CGGG.       GGGG      :GGGGC          :
+             ,GGGGG.       GGGGG:  .LGGGGG,.tG   GGGG        GGGGGGt,..,fGC
+        ,GGGGGGGGGGGGGGf    iGGGGGG   CGGGGC  GGGGGGGGGG       LGGGGGGGC
+
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, minimum-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/speeches-writings/speeches/transcending-boundaries-new-variation-liberal-arts-ideal" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/1963" />
+  <title>Transcending Boundaries: A New Variation on the Liberal Arts Ideal
+ | Office of the President</title>
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+  <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+
+  <link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_LArH7Avt_jMWbKQlemaJinUm77NWHsvIR0KIq0fnWd4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_OeRMnEygp9KsxbWHSIhq3YfGrLGo9tVurh0rgb4IgSQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_cAhd4uy3Au41hEQEkVpwRFXE9gnieoBnnRomFcknFcU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_23.css?paqjc0" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_26.css?paqjc0" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_nBvgsRGFO8eRuGybs3zqi1R0F_76QazEf5KpSL9kQhA.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_059BxwQdO3W6gC_prw0ohrQj1fWv8MiFJkqt4YP0qJk.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://president.yale.edu/sites/all/libraries/respondjs/respond.min.js?paqjc0"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+Drupal.settings.ais = [{"name":"threshold-480","size":480},{"name":"threshold-768","size":768},{"name":"threshold-992","size":992},{"name":"threshold-1382","size":1382}];
+Drupal.settings.ais_method = "both-max";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_FCbVJy4R9U6dcYORv_5oUUdxqrzv2ypaZ3tWIRydWk4.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_JMLtTwkBrCpIk3h5ar8brb-5bR1lXKbrC7Jgd0kG0lw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-991898-16", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_CmJ8I_yZ56Qc__8wJuzi6qAv6LW5E8M68Xn7gIMcs0M.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"yalenew_standard","theme_token":"_2tn_kd-qaSnXhAahdIxf-HbeSFxO05ej8Fl2f5vSjc","js":{"sites\/all\/themes\/yalenew_base\/js\/jcaption.min.js":1,"sites\/all\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.js":1,"ais\/assets\/js\/ais.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.mousewheel.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/script.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/yalenew_base\/js\/modernizr.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/jquery.fitted.js":1,"sites\/all\/themes\/yalenew_base\/js\/fastclick.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/appendAround.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ais\/assets\/css\/ais.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/jscrollpane\/css\/jquery.jscrollpane.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/typogrify\/typogrify.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/yalenew_base\/css\/globalnew.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"ie::wide::sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/fluid\/yalenew-default-fluid-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/narrow\/yalenew-default-narrow-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1}},"collapsiblock":{"blocks":{"block-block-21":"3","block-block-22":"3","block-block-23":"3","block-views-lorimer-awardees-list-block-1":"1","block-block-24":"1","block-menu-block-1":"1","block-block-18":"1","block-block-15":"1","block-block-17":"1","block-menu-menu-banner-menu":"1","block-views-galleries-block-3":"1","block-menu-block-3":"1","block-block-25":"1","block-block-9":"1","block-views-rotating-header-image-block":"1","block-block-26":"1","block-block-16":"1","block-block-27":"1","block-block-28":"1","block-block-29":"1","block-block-30":"1","block-system-main-menu":"1","block-block-31":"1","block-block-32":"1","block-block-33":"1","block-block-34":"1","block-search-form":"1","block-block-35":"1","block-views-campus-messages-block-1":"1","block-views-06dc87f73e52cf986411e7afdc23757b":"1","block-block-36":"1","block-views-campus-messages-block-3":"1","block-views-rotating-feature-block":"1","block-views-feature-carousel-block-3":"1","block-block-37":"1","block-block-39":"1","block-block-38":"1","block-menu-block-4":"1","block-menu-block-5":"1","block-block-41":"1","block-block-46":"1","block-block-51":"1","block-block-66":"1","block-block-71":"1","block-block-76":"1","block-block-81":"1","block-block-86":"1"},"default_state":"1","slide_type":"1","slide_speed":"200","block_title":":header:first","block":"article.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":null},"jScrollPane":{"class":".scroll-pane"},"custom_search":{"form_target":"_self","solr":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/speeches-writings\/speeches\/transcending-boundaries-new-variation-liberal-arts-ideal":true},"omega":{"layouts":{"primary":"wide","order":["fluid","narrow","wide"],"queries":{"fluid":"all and (max-width: 739px)","narrow":"all and (min-width: 740px) and (max-width: 1024px)","wide":"all and (min-width: 1025px)"}}}});
+//--><!]]>
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1963 node-type-president-speeches yalenew-standard context-speeches-writings one-sidebar sidebar-first nav-blue-med block-carbon nav-serif block-font-sans block-outline">
+  <aside role='complementary' id="skip-link" aria-label="Skip to main content">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </aside>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header" role="banner">
+  <div id="zone-topper-wrapper" class="zone-wrapper zone-topper-wrapper clearfix yalenew-standard-topper">  <div id="zone-topper" class="zone zone-topper clearfix container-12">
+    <div  class="grid-3 region region-topper-first" id="region-topper-first">
+  <div class="region-inner region-topper-first-inner">
+      <div class="topper-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-univ"><span class="element-invisible">Yale University</span></a>
+      </div>
+
+	 <div id="moved-main-nav-wrapper">
+                <button aria-expanded="false" id="nav-ready" class="nav-ready"><span class="element-invisible">Open Main Navigation</span></button>
+                <div id="moved-main-nav" class="moved-main-nav" data-set="append-main-nav"></div>
+                <button aria-expanded="true" id="nav-close" class="nav-close nav-hidden"><span class="element-invisible">Close Main Navigation</span></button>
+        </div>
+
+  </div>
+</div>
+<div class="grid-9 region region-topper-second" id="region-topper-second">
+  <div class="region-inner region-topper-second-inner">
+    <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <form class="search-form" role="search" aria-label="Site Search" action="/speeches-writings/speeches/transcending-boundaries-new-variation-liberal-arts-ideal" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2"><i class="fa fa-search"></i> </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search this site" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input style="display:none;" type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-p4tbDRExQ2H66_TCsJISfYCGHRqG7He0CWaQieUMxlY" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-10 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+                                                  <h2 class="site-name"><a href="/" title="Home">Office of the President
+</a></h2>
+                                  </div>
+          </div>
+</div>
+  </div>
+</div></header>
+  
+      <main  id="section-content" class="section section-content" role="main">
+  <div id="section-content-inner">
+    
+
+<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  <div id="zone-menu" class="zone zone-menu clearfix yale-standard-menu container-12">
+
+<div id="original-main-nav-wrapper">
+  <div id="original-main-nav" data-set="append-main-nav">
+    <div id="main-nav">
+
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav id="main-menu-navigation" role="navigation" aria-label="Main Menu" class="navigation">
+                  <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first collapsed menu-about"><a href="/office-president">About</a></li>
+<li class="collapsed menu-programs-&amp;-outreach"><a href="/programs-outreach">Programs &amp; Outreach</a></li>
+<li class="collapsed menu-advisory-groups"><a href="/advisory-groups">Advisory Groups</a></li>
+<li class="expanded active-trail menu-speeches-&amp;-writings"><a href="/speeches-writings" class="active-trail">Speeches &amp; Writings</a></li>
+<li class="leaf menu-goals-for-yale"><a href="/goals">Goals for Yale</a></li>
+<li class="last leaf menu-news"><a href="/in-the-news">News</a></li>
+</ul>    </div>
+  </div>
+</div>
+    </nav>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  <div id="zone-content" class="zone zone-content clearfix container-12">
+          <div id="breadcrumb" class="grid-12"><nav class="breadcrumb" role="navigation" aria-label="You are here"><a href="/">Home</a><span class="tic"> > </span><a href="/speeches-writings">Speeches & Writings</a><span class="tic"> > </span><a href="/speeches-writings/speeches" title="">Speeches</a><span class="tic"> > </span>Transcending Boundaries: A New Variation on the Liberal Arts Ideal</nav></div>
+    
+    <div id="moved-sidenav-wrapper" class="moved-sidenav-wrapper grid-12">
+       <div id="moved-sidenav" class="moved-sidenav" data-set="append-sidenav"></div>
+    </div>
+
+        <div class="grid-9 push-3 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content" tabindex="-1"></a>
+                <h1 class="title" id="page-title">Transcending Boundaries: A New Variation on the Liberal Arts Ideal
+</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <article about="/speeches-writings/speeches/transcending-boundaries-new-variation-liberal-arts-ideal" typeof="sioc:Item foaf:Document" class="node node-president-speeches node-promoted node-published node-not-sticky author-14 odd clearfix" id="node-president-speeches-1963">
+  <!--    -->
+    <span property="dc:title" content="Transcending Boundaries: A New Variation on the Liberal Arts Ideal" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  <div class="content clearfix">
+    <div class="field field-name-field-speaker field-type-text field-label-inline clearfix"><div class="field-label">Speaker:&nbsp;</div><div class="field-items"><div class="field-item even">Peter Salovey, President of Yale University</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-10-11T00:00:00-04:00">Sunday, October 11, 2015</span></div></div></div><div class="field field-name-field-speech-location field-type-text field-label-inline clearfix"><div class="field-label">Event:&nbsp;</div><div class="field-items"><div class="field-item even">Yale-NUS Inaugural Symposium on International Liberal Education</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Dear friends and colleagues, what a wonderful occasion brings us together today! I hope you will forgive Yale and NUS for feeling like proud parents—we are delighted that many of you are here for the first time to see our young community: vigorous, dynamic, and appealing in its new quarters.</p>
+<p><span>I want to take a moment at the outset to express my gratitude and my admiration for everyone who has been involved in the stewardship of </span>Yale-NUS<span>, and most particularly to </span>NUS<span> President Tan </span>Chorh<span> </span>Chuan<span> and my predecessor at Yale, Rick Levin, who had the vision to imagine a new college and then the tenacity to bring it to fruition.</span></p>
+<p><span>I must also begin by saluting Singapore’s uniquely successful history of investment in its world-leading, primary, secondary, and higher education. From independence onward, Singapore’s leadership has never wavered in its commitment to education as a primary force for national development.</span></p>
+<p><span>And make no mistake in your assessment of what Singapore and its national university are accomplishing here with </span>Yale-NUS<span>. They are creating something new; they are taking risks to do so; and they are exploring the future of higher education on behalf of their own country—and on behalf of the many other countries now sending students to Singapore for a unique liberal arts experience in Asia.</span></p>
+<p><span>Back in 2009 when I was part of the first Yale planning team to visit </span>NUS<span>, we all carried back with us to New Haven one dominant impression: the clear, purposeful intent of the leaders within </span>NUS<span> and the Ministry of Education to move this project forward.</span></p>
+<p><span>Six years later, how would I characterize the outcomes achieved so far? What has confirmed our original intuitions and what has surprised us?</span></p>
+<p><span>Let’s start with the fundamentals: the curriculum and the faculty. From the beginning, we all wanted to design a set of courses in the humanities, social sciences, and natural sciences that all first- and second-year students would take in common, balanced with a sufficient diversity of concentrations or majors that would later provide opportunities for advanced explorations in specific disciplines.</span></p>
+<p><span>Furthermore, we wanted to put both Asian and Western ideas and traditions into </span>dialogue<span> throughout every aspect of the curriculum.</span></p>
+<p><span>And of course, we wanted a faculty that could design and teach this curriculum, meaning they had to be heartily enthusiastic about transcending the boundaries and hyper-specialization that too often characterize Western academia. We wanted our faculty to be learners as much as teachers.</span></p>
+<p><span>Well, I am proud to say that I think we have done it. Or I should say, I think THEY have done it, the faculty and administration of the new college, with a special thanks to Professor Charles </span>Bailyn<span>, who agreed to suspend his many responsibilities and projects at Yale to serve as </span>Yale-NUS’s<span> first dean of faculty. </span></p>
+<p><span>It has not been easy; it is still a work in progress. Yet the faculty here has already produced a living, breathing model for a new variation on the liberal arts ideal: a critical education that is interdisciplinary in root and branch, at once broad in exposure and deep in exploration, highly attentive to differing cultural traditions, and forged in substantive, thoughtful </span>dialogue<span> among both its faculty and students.</span></p>
+<p><span>While everything about the faculty and curriculum of </span>Yale-NUS<span> is firmly rooted in the best traditions of East and West, this faculty has already managed to create something fresh and new.</span></p>
+<p><span>Yale-NUS has also given us ways to </span>reimagine<span> student life outside the classroom. At residential campuses in the United States, we are accustomed to a vibrant extracurricular culture that has many positive features but also, frankly, some well-known challenges.  We have often yearned in particular for better ways of linking natural student energies for socializing and sharing common interests with more intentional ways of engaging these energies with student intellectual life and preparation for adult citizenship.</span></p>
+<p><span>Yale-NUS has taken this aspiration seriously and devoted considerable attention to what we think of here as the </span><em>co-curriculum</em><span>, a set of student opportunities, experiences, and organizations that will put what is learned in the classroom into contact with what students may be experiencing with each other, and what they can experience in the world outside the college walls.  </span></p>
+<p><span>As one instance, the new college has liberated a full week in the fall semester for its students to fan out into various countries, where they form small and intensive study groups with a faculty member to explore one particular topic together. And during the recent national election cycle, the residential college rectors hosted a number of speakers and events related to political developments in Singapore.</span></p>
+<p><span>Neither partner took lightly the challenge we had set ourselves. We were each lending our good names to a new entity, with no history or reputation of its own, in a world of undergraduate education where—both within Singapore and in all other countries—the recruitment of the best students in the world is driven by a well-known hierarchy of prestige and selectivity, heavily reinforced by parental and student anxiety about future career opportunities.</span></p>
+<p><span>When we launched recruitment for the first class for </span>Yale-NUS<span>, we had a curriculum we were creating </span><em>de novo</em><span>, in a liberal arts mode mostly unfamiliar outside the U.S., to be taught by a faculty yet to be hired, enrolling a student body for which we could not supply a profile. Moreover, we knew that subsequent classes of potential students and their families, especially here in Singapore, would judge the new college by the perceived quality of the initial class we were able to recruit for it.</span></p>
+<p><span>And here I must ask your indulgence for some real celebration. The university partners labored mightily to make the case for their new college. Yale dedicated its young deputy dean of undergraduate admissions at the time, who is now our dean of undergraduate admissions, full time to the project.</span></p>
+<p><span>And we scored an immense success. In the first three application cycles, </span>Yale-NUS<span> has attracted over 30,000 highly qualified applicants from all regions of the globe, admitted fewer than 5 percent of them, and yielded over half of those who were offered admission.</span></p>
+<p><span>Although we worked hard and successfully on recruitment, our results have also strongly confirmed what we believed from the beginning: there is a tremendous hunger for a holistic, liberal arts education in Asia and around the world, even among students in places where a liberal arts education is not yet widely understood.</span></p>
+<p><span>Not only that, but we have also demonstrated the existence of large numbers of adventurous and entrepreneurial students eager to participate in something new and different. We should all be emboldened, I think, to find new ways and new models for education that will exert an equal attraction for the socially networked, mobile, bold, and internationalized young talent the world so desperately needs as future leaders.</span></p>
+<p><span>You are here now and can get a sense of all of these things for yourselves when you visit the campus, and so I want to say a few words about its design and why it is so important to our joint vision for </span>Yale-NUS<span>.</span></p>
+<p><span>We believe from our own experience in New Haven that architecture is deeply important to fostering a close sense of community, and from the beginning it was one of our primary hopes for the new college as well.</span></p>
+<p><span>The idea of a residential college is simple: a subset of the entire undergraduate community lives in dedicated quarters, to which students are assigned at random when they matriculate, and with whom they will live, work, dine, play and explore for all four years.</span></p>
+<p><span>Individual residential colleges should be small enough that everyone living there will come to know one another and large enough to be a real microcosm of the undergraduate body as a whole.</span></p>
+<p><span>And within each college, we also incorporate living quarters for an adult community to serve as mentors and advisors, breaking down perceived barriers or boundaries between faculty, staff, and students.</span></p>
+<p><span>We have discovered over the years that our residential colleges at Yale foster collaboration, lasting friendships, and mutual support of high aspirations, creating lifelong bonds.</span></p>
+<p><span>Our architects have done an exceptional job translating the design for residential college rooms, common spaces, classrooms, and dining halls to this new environment, and we fully expect the students here to share happy and valuable experiences in a community similar to those that Yale alumni consistently tell us they value most.</span></p>
+<p><span>Now what about the future of this exciting experiment, and of our collaboration with the National University of Singapore?</span></p>
+<p><span>When I spoke earlier today with the visiting college and university presidents, I focused on the strategy that has guided Yale in its many international collaborations, the principle of full partnership.</span></p>
+<p><span>And in brief, I shared our view that only by working as full partners with other institutions of like mind do we think we can accomplish our international objectives: the melding of diverse strengths, a deep testing of our ideas, a potential for mutual transformation, and the creation of something genuinely new and distinctive, something that transcends what either partner might have been able to conceive or accomplish on its own.</span></p>
+<p><span>We have seen the fruits of this principle in every aspect of </span>Yale-NUS<span>.</span></p>
+<p><span>We have seen it in curriculum, co-curriculum, faculty, administrative organization, campus architecture, and the terrific students we have succeeded in drawing here, who will bring it all to life as they prepare for their future roles as global citizens and leaders.</span></p>
+<p><span>What do I think both Yale and </span>NUS<span> would like to see going forward?</span></p>
+<p><span>I think it is fair to say that we both share a desire to see more direct exchanges of faculty and students, the exploration of more joint programs between Yale and </span>NUS<span>, a continued effort to find the right balance between the new college’s mission to serve its host country and its dedication to a highly internationalized faculty and student community—and, quite honestly, more effective ways we can both take what we are learning at </span>Yale-NUS<span> and apply those lessons back in our own institutions.</span></p>
+<p><span>I hope that the presence here of so many Yale faculty, administrators, and trustees conveys what we truly feel: that the success of </span>Yale-NUS<span> is critically important to Yale’s future, and that going forward we continue to share in full measure the responsibilities and reap the rewards of this most interesting and exciting partnership.</span></p>
+<p><span>I want to close by saying something about the special history of Yale’s relationships in Asia.</span></p>
+<p><span>A man named </span>Yung<span> Wing (</span>Rong<span> Hong in Mandarin) was the first Chinese citizen to graduate from any North American college, and he was a member of the Yale College Class of 1854.</span></p>
+<p><span>The Yale-China Association was established in 1901, and has compiled an extraordinary record of service to education and development—notable, among many other things, for the fact that even during China’s most tumultuous experiences as a nation, Yale in China never ceased its operations or abandoned its mission of goodwill.</span></p>
+<p><span>Yale-NUS is both the continuation and the fruit of our long engagements in the East, where we meet with those who can join hands across differing traditions because we are all, first and foremost, seekers and educators.</span></p>
+<p><span>In an address I gave to Yale’s entering freshman class in 2004, I left the students with the words of India’s magnificent and profoundly influential poet, </span>Rabindranath<span> </span>Tagore<span>. I’d like to close by sharing these same words with you, hoping that Yale, </span>NUS<span>, and our young and growing community of </span>Yale-NUS<span> College will always be places, as </span>Tagore<span> put it,</span></p>
+<div><span>Where the mind is without fear and the head is held high;</span></div>
+<div>Where knowledge is free;<br />
+Where the world has not been broken up<br />
+into fragments by narrow domestic walls;<br />
+Where words come out from the depth of truth;<br />
+Where tireless striving stretches its arms toward perfection;<br />
+Where the clear stream of reason<br />
+has not lost its way into the dreary desert sand of dead habit;<br />
+Where the mind is led forward . . . into ever-widening thought and action . . .</div>
+<div> </div>
+<div><span>Thank you. </span></div>
+<div> </div>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+<div  class="grid-3 pull-9 region region-sidebar-first sidebar yale-standard-sidebar" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="original-sidenav" data-set="append-sidenav">
+  <div id="additional-nav" class="addnav-ready">
+    <span class="additional-nav-button"><a id="additional-nav-button" role="button" aria-expanded="false" tabindex="0"><span class="ready">Additional Navigation</span><span class="close">Close</span></a></span>
+
+<nav class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1" role="navigation">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf has-children menu-mlid-1201 menu-notes-from-woodbridge-hall"><a href="/speeches-writings/notes-woodbridge-hall" title="">Notes from Woodbridge Hall</a></li>
+<li class="leaf has-children active-trail menu-mlid-1200 menu-speeches"><a href="/speeches-writings/speeches" title="" class="active-trail">Speeches</a></li>
+<li class="last leaf has-children menu-mlid-1203 menu-statements"><a href="/speeches-writings/statements" title="">Statements</a></li>
+</ul></div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>  </div>
+</main>
+  
+      <footer id="section-footer" class="section section-footer" role="contentinfo">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div  class="grid-2 region region-footer-first" id="region-footer-first">
+  <div  class="region-inner region-footer-first-inner">
+    <div class="footer-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-mark"><span class="element-invisible">Yale</span></a></div>
+  </div>
+</div>
+<div  class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <p class="copyright">
+      <a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &middot;
+      <a title="Yale Privacy policy" href="http://www.yale.edu/privacy-policy">Privacy policy</a> <br>
+      Copyright &copy; 2018 Yale University &middot; All rights reserved
+    </p>
+    <div class="block block-footer-message block-footer-message-footer-message odd block-without-title" id="block-footer-message-footer-message">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <p>105 Wall St., New Haven, CT 06511 | P.O. Box 208229, New Haven, CT 06520-8229</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="grid-4 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu sharing block-menu-social-buttons block-menu-menu-social-buttons odd block-without-title" id="block-menu-menu-social-buttons">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-facebook"><a href="https://www.facebook.com/YaleUniversity" class="fa fa-facebook-square"><span>Facebook</span></a></li>
+<li class="leaf menu-twitter"><a href="http://www.twitter.com/yale" class="fa fa-twitter"><span>Twitter</span></a></li>
+<li class="leaf menu-itunes"><a href="http://itunes.yale.edu" class="fa fa-apple"><span>iTunes</span></a></li>
+<li class="leaf menu-youtube"><a href="http://www.youtube.com/yale" class="fa fa-youtube-play"><span>YouTube</span></a></li>
+<li class="leaf menu-sina-weibo"><a href="http://weibo.com/yaleuniversity" class="fa fa-weibo"><span>Sina Weibo</span></a></li>
+<li class="last leaf menu-tumblr"><a href="http://yaleuniversity.tumblr.com" class="fa fa-tumblr-square"><span>Tumblr</span></a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></footer>
+  </div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_p4E-eBjXanNzvwx8r7khJqwcntEMZ06QCNQZgJtaDes.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"180521658b","applicationID":"51794093","transactionName":"Y1xWYkdTCkRRWxAPDFoWdVVBWwtZH1YLAgZrSVVRUG0SXlVP","queueTime":0,"applicationTime":263,"atts":"TxtVFA9JGUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

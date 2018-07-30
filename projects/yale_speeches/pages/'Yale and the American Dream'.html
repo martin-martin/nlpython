@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="en" dir="ltr" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--
+
+  GGGGGGGGGGGG      GGGGGGGGGGG               fGGGGGG
+    ;GGGGG.             GGGi                     GGGG
+      CGGGG:           GGG                       GGGG
+       lGGGGt         GGL                        GGGG
+        .GGGGC       GG:                         GGGG
+          GGGGG    .GG.        ;CGGGGGGL         GGGG          .LGGGGGGGL
+           GGGGG  iGG        GGG:   ,GGGG        GGGG        tGGf     ;GGGC
+            LGGGGfGG        GGGG     CGGG;       GGGG       GGGL       GGGGt
+             lGGGGL                  CGGG;       GGGG      CGGGCCCCCCCCCCCCC
+              GGGG                   GGGG,       GGGG      GGGG
+              GGGG             tCGG; CGGG,       GGGG      GGGG
+              GGGG          GGGG     CGGG.       GGGG      GGGGL
+              GGGG         GGGGC     CGGG.       GGGG      :GGGGC          :
+             ,GGGGG.       GGGGG:  .LGGGGG,.tG   GGGG        GGGGGGt,..,fGC
+        ,GGGGGGGGGGGGGGf    iGGGGGG   CGGGGC  GGGGGGGGGG       LGGGGGGGC
+
+  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, minimum-scale=1, user-scalable=yes" />
+<link rel="shortcut icon" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/speeches-writings/speeches/yale-and-american-dream" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/134" />
+  <title>&#039;Yale and the American Dream&#039;
+ | Office of the President</title>
+  <!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://president.yale.edu/sites/all/themes/yalenew_base/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+  <link rel="apple-touch-icon-precomposed" sizes="228x228" href="/sites/all/themes/yalenew_base/images/touch-icon-228.png">
+
+  <link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_LArH7Avt_jMWbKQlemaJinUm77NWHsvIR0KIq0fnWd4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_OeRMnEygp9KsxbWHSIhq3YfGrLGo9tVurh0rgb4IgSQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_cAhd4uy3Au41hEQEkVpwRFXE9gnieoBnnRomFcknFcU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_23.css?paqjc0" media="all" />
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css_injector/css_injector_26.css?paqjc0" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_nBvgsRGFO8eRuGybs3zqi1R0F_76QazEf5KpSL9kQhA.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="https://president.yale.edu/sites/default/files/css/css_059BxwQdO3W6gC_prw0ohrQj1fWv8MiFJkqt4YP0qJk.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="https://president.yale.edu/sites/all/libraries/respondjs/respond.min.js?paqjc0"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_vSmhpx_T-AShyt_WMW5_TcwwxJP1imoVOa8jvwL_mxE.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+Drupal.settings.ais = [{"name":"threshold-480","size":480},{"name":"threshold-768","size":768},{"name":"threshold-992","size":992},{"name":"threshold-1382","size":1382}];
+Drupal.settings.ais_method = "both-max";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_FCbVJy4R9U6dcYORv_5oUUdxqrzv2ypaZ3tWIRydWk4.js"></script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_JMLtTwkBrCpIk3h5ar8brb-5bR1lXKbrC7Jgd0kG0lw.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-991898-16", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_CmJ8I_yZ56Qc__8wJuzi6qAv6LW5E8M68Xn7gIMcs0M.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"yalenew_standard","theme_token":"J5pjsGDJjhZXrzSMm7GDTkM3-R-qq-YM0MG69lp4wAI","js":{"sites\/all\/themes\/yalenew_base\/js\/jcaption.min.js":1,"sites\/all\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"1":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.js":1,"ais\/assets\/js\/ais.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.jscrollpane.min.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/jquery.mousewheel.js":1,"sites\/all\/modules\/contrib\/jscrollpane\/js\/script.js":1,"sites\/all\/modules\/contrib\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/yalenew_base\/js\/modernizr.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/jquery.fitted.js":1,"sites\/all\/themes\/yalenew_base\/js\/fastclick.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/appendAround.min.js":1,"sites\/all\/themes\/yalenew_base\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/contrib\/ais\/assets\/css\/ais.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/collapsiblock\/collapsiblock.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/jscrollpane\/css\/jquery.jscrollpane.css":1,"sites\/all\/modules\/contrib\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/contrib\/typogrify\/typogrify.css":1,"sites\/all\/modules\/contrib\/custom_search\/custom_search.css":1,"\/\/maxcdn.bootstrapcdn.com\/font-awesome\/4.7.0\/css\/font-awesome.min.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/yalenew_base\/css\/globalnew.css":1,"public:\/\/css_injector\/css_injector_23.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"ie::wide::sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/fluid\/yalenew-default-fluid-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/narrow\/yalenew-default-narrow-12.css":1,"sites\/all\/themes\/yalenew_base\/css\/grid\/yalenew_default\/wide\/yalenew-default-wide-12.css":1}},"collapsiblock":{"blocks":{"block-block-21":"3","block-block-22":"3","block-block-23":"3","block-views-lorimer-awardees-list-block-1":"1","block-block-24":"1","block-menu-block-1":"1","block-block-18":"1","block-block-15":"1","block-block-17":"1","block-menu-menu-banner-menu":"1","block-views-galleries-block-3":"1","block-menu-block-3":"1","block-block-25":"1","block-block-9":"1","block-views-rotating-header-image-block":"1","block-block-26":"1","block-block-16":"1","block-block-27":"1","block-block-28":"1","block-block-29":"1","block-block-30":"1","block-system-main-menu":"1","block-block-31":"1","block-block-32":"1","block-block-33":"1","block-block-34":"1","block-search-form":"1","block-block-35":"1","block-views-campus-messages-block-1":"1","block-views-06dc87f73e52cf986411e7afdc23757b":"1","block-block-36":"1","block-views-campus-messages-block-3":"1","block-views-rotating-feature-block":"1","block-views-feature-carousel-block-3":"1","block-block-37":"1","block-block-39":"1","block-block-38":"1","block-menu-block-4":"1","block-menu-block-5":"1","block-block-41":"1","block-block-46":"1","block-block-51":"1","block-block-66":"1","block-block-71":"1","block-block-76":"1","block-block-81":"1","block-block-86":"1"},"default_state":"1","slide_type":"1","slide_speed":"200","block_title":":header:first","block":"article.block","block_content":"div.content"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px","colorbox_original_image":null},"jScrollPane":{"class":".scroll-pane"},"custom_search":{"form_target":"_self","solr":0},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/speeches-writings\/speeches\/yale-and-american-dream":true},"omega":{"layouts":{"primary":"wide","order":["fluid","narrow","wide"],"queries":{"fluid":"all and (max-width: 739px)","narrow":"all and (min-width: 740px) and (max-width: 1024px)","wide":"all and (min-width: 1025px)"}}}});
+//--><!]]>
+</script>
+
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-134 node-type-president-speeches yalenew-standard context-speeches-writings one-sidebar sidebar-first nav-blue-med block-carbon nav-serif block-font-sans block-outline">
+  <aside role='complementary' id="skip-link" aria-label="Skip to main content">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </aside>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header" role="banner">
+  <div id="zone-topper-wrapper" class="zone-wrapper zone-topper-wrapper clearfix yalenew-standard-topper">  <div id="zone-topper" class="zone zone-topper clearfix container-12">
+    <div  class="grid-3 region region-topper-first" id="region-topper-first">
+  <div class="region-inner region-topper-first-inner">
+      <div class="topper-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-univ"><span class="element-invisible">Yale University</span></a>
+      </div>
+
+	 <div id="moved-main-nav-wrapper">
+                <button aria-expanded="false" id="nav-ready" class="nav-ready"><span class="element-invisible">Open Main Navigation</span></button>
+                <div id="moved-main-nav" class="moved-main-nav" data-set="append-main-nav"></div>
+                <button aria-expanded="true" id="nav-close" class="nav-close nav-hidden"><span class="element-invisible">Close Main Navigation</span></button>
+        </div>
+
+  </div>
+</div>
+<div class="grid-9 region region-topper-second" id="region-topper-second">
+  <div class="region-inner region-topper-second-inner">
+    <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <form class="search-form" role="search" aria-label="Site Search" action="/speeches-writings/speeches/yale-and-american-dream" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label for="edit-search-block-form--2"><i class="fa fa-search"></i> </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search this site" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input style="display:none;" type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-4DtjlS1ms4e3YcOe8OxlV2o7xlqT4KcXtJPlBfkCB5c" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-10 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+                                                  <h2 class="site-name"><a href="/" title="Home">Office of the President
+</a></h2>
+                                  </div>
+          </div>
+</div>
+  </div>
+</div></header>
+  
+      <main  id="section-content" class="section section-content" role="main">
+  <div id="section-content-inner">
+    
+
+<div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  <div id="zone-menu" class="zone zone-menu clearfix yale-standard-menu container-12">
+
+<div id="original-main-nav-wrapper">
+  <div id="original-main-nav" data-set="append-main-nav">
+    <div id="main-nav">
+
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav id="main-menu-navigation" role="navigation" aria-label="Main Menu" class="navigation">
+                  <div class="block block-system block-menu block-main-menu block-system-main-menu odd block-without-title" id="block-system-main-menu">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first collapsed menu-about"><a href="/office-president">About</a></li>
+<li class="collapsed menu-programs-&amp;-outreach"><a href="/programs-outreach">Programs &amp; Outreach</a></li>
+<li class="collapsed menu-advisory-groups"><a href="/advisory-groups">Advisory Groups</a></li>
+<li class="expanded active-trail menu-speeches-&amp;-writings"><a href="/speeches-writings" class="active-trail">Speeches &amp; Writings</a></li>
+<li class="leaf menu-goals-for-yale"><a href="/goals">Goals for Yale</a></li>
+<li class="last leaf menu-news"><a href="/in-the-news">News</a></li>
+</ul>    </div>
+  </div>
+</div>
+    </nav>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+<div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  <div id="zone-content" class="zone zone-content clearfix container-12">
+          <div id="breadcrumb" class="grid-12"><nav class="breadcrumb" role="navigation" aria-label="You are here"><a href="/">Home</a><span class="tic"> > </span><a href="/speeches-writings">Speeches & Writings</a><span class="tic"> > </span><a href="/speeches-writings/speeches" title="">Speeches</a><span class="tic"> > </span>'Yale and the American Dream' by President Peter Salovey</nav></div>
+    
+    <div id="moved-sidenav-wrapper" class="moved-sidenav-wrapper grid-12">
+       <div id="moved-sidenav" class="moved-sidenav" data-set="append-sidenav"></div>
+    </div>
+
+        <div class="grid-9 push-3 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content" tabindex="-1"></a>
+                <h1 class="title" id="page-title">&#039;Yale and the American Dream&#039;
+</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <article about="/speeches-writings/speeches/yale-and-american-dream" typeof="sioc:Item foaf:Document" class="node node-president-speeches node-promoted node-published node-not-sticky author-6 odd clearfix" id="node-president-speeches-134">
+  <!--    -->
+    <span property="dc:title" content="&#039;Yale and the American Dream&#039;" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+  <div class="content clearfix">
+    <div class="field field-name-field-speaker field-type-text field-label-inline clearfix"><div class="field-label">Speaker:&nbsp;</div><div class="field-items"><div class="field-item even">Peter Salovey, President of Yale University</div></div></div><div class="field field-name-field-date field-type-datetime field-label-inline clearfix"><div class="field-label">Date:&nbsp;</div><div class="field-items"><div class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2013-08-24T00:00:00-04:00">Saturday, August 24, 2013</span></div></div></div><div class="field field-name-field-speech-location field-type-text field-label-inline clearfix"><div class="field-label">Event:&nbsp;</div><div class="field-items"><div class="field-item even">Freshman Address, Yale College Class of 2017</div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>Good morning Dean Miller and colleagues on the platform, friends, parents and other relatives, and, members of the Class of 2017. It is an honor, as Yale’s new president, to say these three words, which I know you and your parents, your families and friends, have waited quite some time to hear: Welcome to Yale!  </p>
+<p>I have something in common with you because I, too, am a freshman today. Although I have been on campus for more than three decades, this is, in fact, my very first freshman address as the president of this inspiring university. Like you, I am feeling a little nervous, a bit humbled, but certainly excited. And, you and I know that our parents are feeling quite proud of us today. As the saying goes, behind every new Yalie is a stunned parent!</p>
+<p><a href="http://news.yale.edu/videos/yale-college-freshmen-assembly-2013" target="_blank"><strong>Watch the Freshman Assembly video.</strong></a></p>
+<p>Each of you arrived at Yale with your own story, and I look forward to hearing them. This morning, I would like to begin by telling you the story of my father. It is a story that many Americans share and that I know many of you share. In fact, we actually sang about it just a few moments ago in the beautiful hymn written by a member of the Yale Class of 1820:</p>
+<p style="padding-left:240px">“Oh God, beneath thy guiding hand,<br />
+Our exiled fathers crossed the sea ...<br />
+Laws, freedom, truth, and faith ...<br />
+Came with those exiles o’er the waves”<a href="#1"><sup>1</sup></a></p>
+<p>My father’s parents — my grandparents — came to the United States by way of Warsaw and Jerusalem. They actually first met each other on a ship across the Atlantic, in the midst of the journey between their old and new worlds.</p>
+<p>Together they lived on the Lower East Side of New York, spent a little time in Chicago, and ended up in the Bronx, where my father was raised. Like many immigrants, my grandparents were poor in means but rich in culture and spirit. My grandmother worked as a bookkeeper, and after my grandfather lost his small store during the Depression, he took care of the elderly and infirm.</p>
+<p>But today I stand before you, a professor of psychology and president of one of the world’s finest universities — <em>the</em> finest university. Today I stand before you, humbled, because I know that there are very few places in the world where, in two generations, a family can rise from modest means to this kind of role in life.</p>
+<p>How did it happen?</p>
+<p>The answer to that question in my family I am sure resembles the answer in many of yours. Growing up in a small apartment in the Bronx, my grandparents encouraged my father to take education seriously. As with at least two of you here today, he attended the Bronx High School of Science, a fantastic public school, and then the City College of New York and Brooklyn College. Ultimately, he received a doctorate in chemistry from Harvard. (Nobody’s perfect.)</p>
+<p>All of this education — all of it! — was without financial cost to my father’s family. In a country where opportunity was within reach for both the rich and the poor, my grandparents’ values launched my father toward a career as a polymer chemist at Bell Labs and, later, as a professor at the University of Southern California. And this education allowed my own childhood to be decidedly middle-class, and free, for the most part, from financial worry.</p>
+<p>My father’s personal dream to be a scientist, regardless of how or where he grew up — this is the American Dream as well. Study hard, work hard, and you will be rewarded by social and economic mobility. Because of education, the ladder of opportunity was within reach for my father.</p>
+<p>Of course, this dream is not unique to America — those of you who come to Yale from overseas — about 10% of your class — may have experienced a version of the American Dream in your own country and in your own family. From the Bronx to Budapest, from San Diego to Seoul, there is a common understanding that transcends borders of the power of education. In fact, on a recent trip to Asia, I heard the phrase <em>Chinese Dream</em> many times, and it signified, in part, the very idea I am talking about now.</p>
+<p>For the purposes of these remarks, I use the phrase “American Dream.” And this morning I worry about whether the American Dream is still possible and whether education is still the best “ticket” to socioeconomic mobility. Is it still, as the historian who made popular the idea of the American Dream wrote in 1931,</p>
+<p>“... [a] dream of a land in which life should be better and richer and fuller for everyone, with opportunity for each according to ability or achievement ... a dream of being able to grow to fullest development as man and woman, unhampered by the barriers which had slowly been erected in the older civilizations, unrepressed by social orders which had developed for the benefit of classes rather than for the simple human being of any and every class.”<a href="#2"><sup>2</sup></a></p>
+<p>Higher education has been viewed in American history as the vehicle by which to pursue this dream and to improve one’s personal circumstances — as it was with my “first-gen” father. It is an idea as old as America itself. For as Thomas Jefferson wrote, “If the condition of man is to be progressively ameliorated, as we fondly hope and believe, education is to be the chief instrument in effecting it.”<a href="#3"><sup>3</sup></a> That is why, even after writing the Declaration of Independence, after serving as America’s first secretary of state, second vice president, and third president, Jefferson would later say that founding the University of Virginia was one of the accomplishments about which he felt the most pride.</p>
+<p>This same vision, this same emphasis on education, has motivated progressive legislation from the Morrill Acts creating the land-grant colleges, to the GI Bill, to Title IV and the Federal Pell Grant program. These investments are worth making because college graduates develop broad and deep knowledge, sharp critical thinking and communication skills, and the ability to work collaboratively. And as a result, they are three times as likely as those without a degree to move from the lowest levels of family income to the top level.<sup><a href="#4">4</a>,<a href="#5">5</a></sup></p>
+<p>Though the American Dream is deeply rooted in our history, it is not a guarantee. It is something that must be protected and preserved, and passed on with care to the next generation. And yet, in recent years, this dream has been tested. College completion has increased only among families in the top half of the income distribution and not among the bottom half.<a href="#6"><sup>6</sup></a></p>
+<p>Another threat to the American Dream was revealed by the economists Caroline Hoxby and Christopher Avery.<a href="#7"><sup>7</sup></a> They found that many high-achieving students from less well-off families do not even apply to the very best colleges and universities, especially if they are from smaller, more rural parts of the country. These students do not know anyone who has attended a place like Yale, and they do not think a place like Yale is “for them.” Their families do not know that need-based financial aid is available and that they would contribute far less than the “sticker price” of many colleges and universities in this country.</p>
+<p>Why did I choose to talk about Yale and the American Dream today? To assure you — especially those of you from families that are not affluent – that the dream is very much alive here at Yale. Ten years after they graduated, members of the Yale Class of 1998 reported impressive — and similar — average salaries and a high level of life satisfaction, regardless of whether they came from families whose standard of living was “far below average,” “below average,” “average,” or “above average.”<a href="#8"><sup>8</sup></a></p>
+<p>Yale has seen socioeconomic mobility as a central pillar of its mission since its earliest days. The eminent Yale historian, George W. Pierson, a man whose love for Yale and her history garnered him the honorary title “Father Yale” wrote, “... half the boys in each colonial class were from families of no social standing. In the 19th century Yale continued to attract and to care for many of the most modest means ... and tuition was religiously kept low: by 1850 it was just $39 ... [!]”<a href="#9"><sup>9</sup></a></p>
+<p>A Yale student named David Avery noted in 1768, “There appears to be a laudable ambition to excel in knowledge. It is not he that has got the finest coat or largest ruffles that is esteemed here at present ... the students may expect marks of distinction to be put upon the best scholars and speakers.”<a href="#10"><sup>10</sup></a></p>
+<p>(Let me pause here and note that we should all be relieved that having the largest ruffles is no longer a sign of superiority!)</p>
+<p>I raise the issue of social mobility because if you have any doubt that the American dream still lives on today, if you – like me — wonder whether someone like my father could fulfill his dreams, just look around you. Look at yourselves. Look at the students next to you — they have different talents and ideas from you, different family backgrounds from you, but each of you worked incredibly hard to make it here. If you have any doubt that the American Dream lives on, Class of 2017, gaze into the eyes of your parents. They know, looking back at you here today, that the unthinkable is still possible.</p>
+<p>But let me mention something that is just a bit more difficult to discuss. You, Class of 2017, bring your different cultures, religions, ethnicities, and sexual orientations to this campus. And, as any Yale student will tell you, one of Yale’s most inspiring qualities is that Yalies are quite comfortable discussing these differences. You are also an economically diverse group. Some of you hail from families of limited means and others from great abundance. Most of you are from families somewhere in between. And yet, these differences remain just below the surface. Roommates become aware of these disparities, of course, but they are often uncomfortable talking about them and sharing what their lives were like prior to attending Yale. I believe that talking about socioeconomic status is one of the last taboos among Yale students. When the issue of money comes up, students are often profoundly uncomfortable.</p>
+<p>This is understandable. Yale is such a great equalizer most of the time that when it comes to money, people may feel guilty if they think they have more than someone else — or embarrassed if they have less. Some of you will hold a work-study job, others will not. Some of you will be able to travel overseas during spring break, others not. Some of you can afford to accept unpaid internships in the summer, others of you cannot. When you decide to purchase a sofa for your common room or make plans to eat in one of New Haven’s wonderful restaurants, some of your roommates will not think twice about doing so, but for others it will be a financial stretch, perhaps too large a one.</p>
+<p>Yale has taken many measures to try to find ways to equalize the college experience; gone are the days when students spent many hours waiting tables or going hungry. Still, differences exist, and it makes little sense to pretend they do not — and little sense to think Yale can obliterate all distinctions or make everything possible for those who do not have as much as others.</p>
+<p>To the Class of 2017, I encourage you to be sensitive and open to one another. You will meet students here from all walks of life. The uncomfortable conversations that you will certainly have — in Commons or in your common room — represent opportunities for true understanding and true friendship with classmates whose families are far different from your own.</p>
+<p>One of our residential college masters told me about two students in his college: one felt so guilty about his family’s wealth that he refused ever to invite any friends home — and his parents complained about this to the master. In that same college, another student, now graduated, was ashamed that she had grown up in a shack and hid this from her friends. At the end of her time at Yale, her friends found out the truth about her background. She was stunned — and relieved — to know that that instead of thinking less of her, they thought more of her for triumphing over challenging circumstances!</p>
+<p>This is what Yalies are like, although, after all, there <em>are</em> hard aspects of life. They can be made less difficult, however, by the openness and sharing for which Yale students are generally so well known. “Yale students,” Pierson wrote, “are not loners, not solitary ... they are part of each other...”<a href="#11"><sup>11</sup></a></p>
+<p>As a product of the American Dream myself, I am inspired by it. I am committed to preserving it. And, while admitting that it has been idealized historically, and, perhaps compromised in contemporary society, I am convinced that yours can be the generation that ensures it is kept alive, and I mean this whether you come from Pittsburgh, Pretoria, or Ponce.</p>
+<p>I am thankful that Yale’s financial aid policies and practices sustain and propel this promise and allow so many of you to access the American Dream. But more than that, I am thankful that a Yale education helps to develop the habits of mind and behavior that will first lead you to uncomfortable and challenging conversations, and then motivate you to make constructive contributions to your professions and to your families, your countries, and the world.</p>
+<p>Yours can be the generation that helps to develop a more complex vision of the American Dream, one that both moves beyond social mobility and also includes living a life of growth, meaning, and significance. Affordable education and opportunities for fulfilling work are essential for this vision. It is my hope — indeed my conviction — that you will continue to ensure that the dream of a better life will be woven permanently into the fabric of our societies around the world. </p>
+<p>So, however it is that you arrived here at Yale, on behalf of all my colleagues on the platform this morning:</p>
+<p>Welcome parents … welcome families … welcome Class of 2017!</p>
+<hr /><p>[<a name="1" id="1">1</a>] <em>Oh God, Beneath Thy Guiding Hand</em> was written by The Reverend Leonard Bacon, Yale B.A. 1820, and minister of the First Church of New Haven from 1825 to 1881. He served as a member of the Yale faculty and the Yale Corporation.</p>
+<p>[<a name="2" id="2">2</a>] Adams, J.T. (1931). <em>The epic of America.  Boston: Little, Brown and Co.</em></p>
+<p>[<a name="3" id="3">3</a>] Jefferson, T.  (1817). Letter to Éleuthère Irénée du Pont de Nemours: September 9, 1817. <em>The words of Thomas Jefferson.</em><span> Charlottesville, VA: Thomas Jefferson Foundation, 2008,  Print 71.</span></p>
+<p>[<a name="4" id="4">4</a>] Pew Charitable Trusts (2012). <em>Pursuing the American dream: Economic mobility across generations. </em>Washington, DC: The Pew Charitable Trusts.</p>
+<p>[<a name="5" id="5">5</a>] There are many other ways to document the economic value of a college education: College graduates earn about $1 million more over the course of their lifetimes than those without degrees (Carnevale, A.P., Rose, S., &amp; Cheah, B. [2011]. <em>The college payoff: Education, occupations, life-time earnings. </em>Washington, DC: Georgetown University Center on Education and the Workforce). To put this in perspective, the decline in the employment rate and wages of college graduates during the recent Great Recession has been half that of those who did not go to college (Pew Charitable Trusts [2013].  <em>How much protection does a college degree afford: The impact of the recession on recent college graduates</em><span>). On the opening days of students’ freshman year, I would rather emphasize other motives for education and other kinds of outcomes.</span></p>
+<p>[<a name="6" id="6">6</a>] Mettler, S. (2014). <em>Degrees of inequality: How the politics of higher education sabotaged the American Dream. </em>New York: Basic Books.</p>
+<p>[<a name="7" id="7">7</a>] Hoxby, C.F., &amp; Avery, C. (2013). <em>The missing ‘one-offs:’ The hidden supply of high-achieving, low income students.</em><span> Presented at the spring 2013 Brookings Panel on Economic Activity, March 21-22.</span></p>
+<p>[<a name="8" id="8">8</a>] COFHE Alumni Survey (2009). Data provided by Yale’s Office of Institutional Research (OIR). A confidentiality agreement with COFHE allows Yale-specific data to be cited but not findings based on the overall COFHE sample.</p>
+<p>[<a name="9" id="9">9</a>] Pierson, G.W. (1979). <em>Yale:A short history</em> (2<sup>nd</sup> edition). New Haven, CT: Office of the Secretary, Yale University, pp. 57-59.</p>
+<p>[<a name="10" id="10">10</a>] Quoted in Kelley, B.M. (1974). <em>Yale:  A history.</em> New Haven: Yale University Press, p. 78.</p>
+<p>[<a name="11" id="11">11</a>] Quoted in Griffin, M. (1991). <em>In his Own Words: A Memoir of Martin Griffin, </em>New Haven: Yale University Press, p. 83.</p>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>
+    </div>
+  </div>
+</div>
+      </div>
+</div>
+<div  class="grid-3 pull-9 region region-sidebar-first sidebar yale-standard-sidebar" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="original-sidenav" data-set="append-sidenav">
+  <div id="additional-nav" class="addnav-ready">
+    <span class="additional-nav-button"><a id="additional-nav-button" role="button" aria-expanded="false" tabindex="0"><span class="ready">Additional Navigation</span><span class="close">Close</span></a></span>
+
+<nav class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1" role="navigation">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf has-children menu-mlid-1201 menu-notes-from-woodbridge-hall"><a href="/speeches-writings/notes-woodbridge-hall" title="">Notes from Woodbridge Hall</a></li>
+<li class="leaf has-children active-trail menu-mlid-1200 menu-speeches"><a href="/speeches-writings/speeches" title="" class="active-trail">Speeches</a></li>
+<li class="last leaf has-children menu-mlid-1203 menu-statements"><a href="/speeches-writings/statements" title="">Statements</a></li>
+</ul></div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>  </div>
+</main>
+  
+      <footer id="section-footer" class="section section-footer" role="contentinfo">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div  class="grid-2 region region-footer-first" id="region-footer-first">
+  <div  class="region-inner region-footer-first-inner">
+    <div class="footer-logo"><a href="http://www.yale.edu" class="y-icons y-yale y-mark"><span class="element-invisible">Yale</span></a></div>
+  </div>
+</div>
+<div  class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <p class="copyright">
+      <a href="https://usability.yale.edu/web-accessibility/accessibility-yale">Accessibility at Yale</a> &middot;
+      <a title="Yale Privacy policy" href="http://www.yale.edu/privacy-policy">Privacy policy</a> <br>
+      Copyright &copy; 2018 Yale University &middot; All rights reserved
+    </p>
+    <div class="block block-footer-message block-footer-message-footer-message odd block-without-title" id="block-footer-message-footer-message">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <p>105 Wall St., New Haven, CT 06511 | P.O. Box 208229, New Haven, CT 06520-8229</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="grid-4 region region-footer-third" id="region-footer-third">
+  <div class="region-inner region-footer-third-inner">
+    <div class="block block-menu sharing block-menu-social-buttons block-menu-menu-social-buttons odd block-without-title" id="block-menu-menu-social-buttons">
+  <div class="block-inner clearfix">
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf menu-facebook"><a href="https://www.facebook.com/YaleUniversity" class="fa fa-facebook-square"><span>Facebook</span></a></li>
+<li class="leaf menu-twitter"><a href="http://www.twitter.com/yale" class="fa fa-twitter"><span>Twitter</span></a></li>
+<li class="leaf menu-itunes"><a href="http://itunes.yale.edu" class="fa fa-apple"><span>iTunes</span></a></li>
+<li class="leaf menu-youtube"><a href="http://www.youtube.com/yale" class="fa fa-youtube-play"><span>YouTube</span></a></li>
+<li class="leaf menu-sina-weibo"><a href="http://weibo.com/yaleuniversity" class="fa fa-weibo"><span>Sina Weibo</span></a></li>
+<li class="last leaf menu-tumblr"><a href="http://yaleuniversity.tumblr.com" class="fa fa-tumblr-square"><span>Tumblr</span></a></li>
+</ul>    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div></footer>
+  </div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div>
+<script type="text/javascript" src="https://president.yale.edu/sites/default/files/js/js_p4E-eBjXanNzvwx8r7khJqwcntEMZ06QCNQZgJtaDes.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"180521658b","applicationID":"51794093","transactionName":"Y1xWYkdTCkRRWxAPDFoWYURcHQ1ZVF0cSBNcSQ==","queueTime":0,"applicationTime":22,"atts":"TxtVFA9JGUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
